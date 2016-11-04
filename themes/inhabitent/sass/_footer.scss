@@ -1,0 +1,13 @@
+footer {
+    background: url(../../images/dark-wood.png);
+    height: 350px;
+    width: 100%;
+}
+
+.email span:before{
+	font-family: 'FontAwesome';
+	content: '\f085';
+	position: relative;
+	margin-right: 5px;
+	font-size: 110%;
+}
