@@ -22,9 +22,29 @@
     border-bottom: 1px solid lightgrey;
 }
 
-header {
-        border-bottom: 1px solid lightgrey;
+// .site-header {
+//         border-bottom: 1px solid lightgrey;
 
 
+// }
+
+//home page header------------------------------
+
+
+.logo {
+    height: 25px;
 }
 
+.menu li {
+    text-transform: uppercase;
+    margin-right:20px;
+    
+}
+
+.menu li a {
+    color: #248A83;
+}
+
+.menu li a:hover {
+    color:black;
+}

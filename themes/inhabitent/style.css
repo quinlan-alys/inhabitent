@@ -222,6 +222,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Novocento';
+  src: url("../Novecentosanswide-Normal.ttf");
+  src: url("../Novecentosanswide-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novocento-Bold';
+  src: url("../Novecentosanswide-DemiBold.ttf");
+  src: url("../Novecentosanswide-DemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url("../Merriweather-Bold.ttf");
+  src: url("../Merriweather-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url("../Merriweather-Light.ttf");
+  src: url("../Merriweather-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -676,8 +704,18 @@ object {
       justify-content: space-between;
   border-bottom: 1px solid lightgrey; }
 
-header {
-  border-bottom: 1px solid lightgrey; }
+.logo {
+  height: 25px; }
+
+.menu li {
+  text-transform: uppercase;
+  margin-right: 20px; }
+
+.menu li a {
+  color: #248A83; }
+
+.menu li a:hover {
+  color: black; }
 
 .site-main {
   max-width: 80%;
@@ -792,10 +830,12 @@ footer {
   .sidecontact h1 {
     margin-left: 16%;
     font-size: 24px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "novocento-bold"; }
   .sidecontact a {
     text-decoration: none;
-    color: #248A83; }
+    color: #248A83;
+    font-family: "Merriweather-Light"; }
   .sidecontact a:hover {
     color: black; }
 
@@ -830,6 +870,62 @@ footer {
 
 #archives-2 a:hover {
   color: black; }
+
+.herobanner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+
+.site-front h1 {
+  text-transform: uppercase;
+  text-align: center; }
+
+.shop-stuff {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center; }
+
+.shopc {
+  border: 1px solid lightgrey;
+  border-top: 3px solid lightgrey;
+  height: 250px;
+  width: 260px; }
+  .shopc:hover {
+    border-color: #d99054; }
+  .shopc p {
+    text-align: center;
+    font-size: 14px;
+    font-family: Merriweather Web,serif; }
+
+.btn {
+  background: #248a83;
+  color: #fff;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.catagorylogo {
+  max-width: 75px; }
+
+.inh-journal h1 {
+  text-transform: uppercase;
+  text-align: center; }
+
+.latest h1 {
+  text-transform: uppercase;
+  text-align: center; }
 
 html {
   max-width: 1120px; }

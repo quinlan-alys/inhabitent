@@ -119,3 +119,7 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+//=======thumbnail images for homepage
+
+add_theme_support( 'post-thumbnails' );
+

@@ -1,3 +1,5 @@
+
+
 .sidebarinfo {
     border-left: 1px solid grey;
       
@@ -8,6 +10,7 @@
 
     li {
         list-style-type: none;
+        
     }
 
     ul {
@@ -18,11 +21,13 @@
     margin-left: 16%;
     font-size: 24px;
     text-transform: uppercase;
+    font-family: "novocento-bold";
     }
 
     a {
         text-decoration: none;
         color:#248A83;
+        font-family: "Merriweather-Light";
     }
     a:hover {
         color:black;
