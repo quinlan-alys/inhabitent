@@ -66,4 +66,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "header";
 @import "journalcontent";
 @import "footer";
+@import "sidebar";
+
+html {
+	max-width: 1120px;
+}
 

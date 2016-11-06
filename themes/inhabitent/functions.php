@@ -111,3 +111,11 @@ require get_template_directory() . '/inc/extras.php';
 // }
 // add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
+// change the read  more button on blog posts 
+
+function new_excerpt_more($more) {
+       global $post;
+	return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+

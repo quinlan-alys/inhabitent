@@ -11,3 +11,46 @@ footer {
 	margin-right: 5px;
 	font-size: 110%;
 }
+
+.footerinfo {
+	display:flex;
+	padding-top: 4%;
+
+li {
+	list-style-type: none;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+
+ h1{
+	color: #d99054;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-left: 34%;
+
+}
+}
+
+.site-info{
+	display:none;
+}
+
+.logofoot {
+	margin-left:13%;
+img {
+	height: 50px;
+}
+}
+
+.copyright {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+} 

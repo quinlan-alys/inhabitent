@@ -660,7 +660,14 @@ object {
   height: 25px; }
 
 .menu li {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 20px; }
+
+.menu li a {
+  color: #248A83; }
+
+.menu li a:hover {
+  color: black; }
 
 .header-flex {
   display: -ms-flexbox;
@@ -673,10 +680,156 @@ header {
   border-bottom: 1px solid lightgrey; }
 
 .site-main {
-  max-width: 65%;
+  max-width: 80%;
   padding: 4%; }
+
+.entry-title {
+  background-color: #248a83;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  display: block; }
+  .entry-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 33.6px;
+    font-size: 2.1rem; }
+
+.entry-header {
+  position: relative; }
+
+.entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 24.25rem;
+  max-width: 75%;
+  top: 0;
+  display: block; }
+
+.readmore {
+  width: 130px;
+  height: 40px;
+  border: 1px solid black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .readmore a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; }
+
+.readmore:hover {
+  border: 1px solid #248a83;
+  background-color: #248a83;
+  color: white; }
+  .readmore:hover a:hover {
+    color: white; }
+
+.flex-wrapper {
+  display: -ms-flexbox;
+  display: flex; }
 
 footer {
   background: url(../../images/dark-wood.png);
   height: 350px;
   width: 100%; }
+
+.email span:before {
+  font-family: 'FontAwesome';
+  content: '\f085';
+  position: relative;
+  margin-right: 5px;
+  font-size: 110%; }
+
+.footerinfo {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4%; }
+  .footerinfo li {
+    list-style-type: none;
+    color: white; }
+  .footerinfo a {
+    text-decoration: none;
+    color: white; }
+  .footerinfo h1 {
+    color: #d99054;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 34%; }
+
+.site-info {
+  display: none; }
+
+.logofoot {
+  margin-left: 13%; }
+  .logofoot img {
+    height: 50px; }
+
+.copyright {
+  text-align: center;
+  color: white;
+  text-transform: uppercase; }
+
+.sidebarinfo {
+  border-left: 1px solid grey; }
+
+.sidecontact {
+  width: 256px; }
+  .sidecontact li {
+    list-style-type: none; }
+  .sidecontact ul {
+    margin: 0; }
+  .sidecontact h1 {
+    margin-left: 16%;
+    font-size: 24px;
+    text-transform: uppercase; }
+  .sidecontact a {
+    text-decoration: none;
+    color: #248A83; }
+  .sidecontact a:hover {
+    color: black; }
+
+#search-2 {
+  display: none; }
+
+#recent-posts-2 {
+  display: none; }
+
+#meta-2 {
+  display: none; }
+
+#categories-2 {
+  display: none; }
+
+#recent-comments-2 {
+  display: none; }
+
+#archives-2 h2 {
+  text-transform: uppercase;
+  margin-left: 16%; }
+
+#archives-2 li {
+  list-style-type: none; }
+
+#archives-2 ul {
+  margin: 0; }
+
+#archives-2 a {
+  text-decoration: none;
+  color: #248A83; }
+
+#archives-2 a:hover {
+  color: black; }
+
+html {
+  max-width: 1120px; }
