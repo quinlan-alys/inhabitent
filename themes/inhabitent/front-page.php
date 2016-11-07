@@ -66,22 +66,22 @@ foreach( $recent_posts as $recent )
 }
 ?>
     </section>
-
+  <h1 class="transform"> Latest Adventures</h1>
     <section class="latest">
-        <h1 class="transform"> Latest Adventures</h1>
+      
             <div class="leftad">
                 <p> Getting back to nature in a canoe </p>
             </div>
             <div class="rightad">
-            <div class="beach">
-                <p> A night with friends at the beach </p>
-            </div>
-            <div class="mountain">
-                <p> Taking in the view at Big Mountain </p>
-            </div>
-            <div class="sky">
-                <p> Star gazing at the night sky </p>
-            </div>
+                <div class="beach">
+                    <p> A night with friends at the beach </p>
+                </div>
+                <div class="mountain">
+                    <p> Taking in the view at Big Mountain </p>
+                </div>
+                <div class="sky">
+                    <p> Star gazing at the night sky </p>
+                </div>
             </div>
             
     </section>
