@@ -741,12 +741,12 @@ object {
 
 .entry-meta {
   background-color: #248a83;
-  bottom: 0;
+  bottom: 7px;
   right: 0;
   color: #fff;
   padding: .75rem 1.5rem;
   position: absolute;
-  margin-top: 24.25rem;
+  margin-top: 366.4px;
   max-width: 75%;
   top: 0;
   display: block; }
@@ -881,10 +881,6 @@ footer {
   height: 100vh;
   width: 100vw; }
 
-.site-front h1 {
-  text-transform: uppercase;
-  text-align: center; }
-
 .shop-stuff {
   display: -ms-flexbox;
   display: flex;
@@ -915,17 +911,71 @@ footer {
   padding: .75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
+  .btn:hover {
+    background: black; }
 
 .catagorylogo {
   max-width: 75px; }
 
-.inh-journal h1 {
+.inh-journal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.transform {
   text-transform: uppercase;
   text-align: center; }
 
-.latest h1 {
-  text-transform: uppercase;
-  text-align: center; }
+.frontposts {
+  border: 1px solid lightgrey;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .frontposts img {
+    border-bottom: 4px solid lightgrey; }
+  .frontposts a {
+    text-transform: uppercase;
+    text-decoration: none; }
+
+.latest {
+  display: -ms-flexbox;
+  display: flex; }
+  .latest h1 {
+    text-transform: uppercase;
+    text-align: center; }
+
+.socbtns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .socbtns div {
+    height: 30px;
+    width: 75px;
+    border: 1px solid black;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .socbtns div:hover {
+      background-color: #248A83;
+      border: none; }
+  .socbtns a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px; }
+    .socbtns a:hover {
+      color: white; }
+
+.submit {
+  border: 1px solid;
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+  background: #248a83; }
 
 html {
   max-width: 1120px; }

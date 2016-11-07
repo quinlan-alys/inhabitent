@@ -11,12 +11,6 @@
 
 //==================shop stuff
 
-.site-front h1 {
-
-    text-transform: uppercase;
-    text-align: center;
-
-}
 
 .shop-stuff  {
     display:flex;
@@ -53,7 +47,7 @@
     text-transform: uppercase;
 
     &:hover {
-        background:
+        background: black;
     }
 }
 
@@ -65,15 +59,54 @@
 
 //==========================journal section
 
-.inh-journal h1 {
+.inh-journal {
+    display:flex;
+    justify-content:space-around;
+
+
+}
+
+    .transform {
     text-transform: uppercase;
     text-align: center;
 
 }
 
-.latest h1 {
+.frontposts {
+    border: 1px solid lightgrey;
+   
+    justify-content:space-around;
+    img {
+        border-bottom: 4px solid lightgrey;
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration:none;
+    }
+}
+
+
+
+// .frontposts {
+//     img {
+//         height: 300px;
+//         width: 300px;
+//     }
+// }
+
+
+
+// adventures sections========================================
+
+
+
+.latest {
+    display:flex;
+
+h1 {
     text-transform: uppercase;
     text-align: center;
 
 }
-
+}

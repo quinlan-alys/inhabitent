@@ -30,7 +30,18 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	
 		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<!-- .entry-footer -->
 </article><!-- #post-## -->
+<div class="socbtns">
+	<div class="socbtn">
+		<a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+	</div>
+	<div class="socbtn">
+		<a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i>Tweet</a>
+	</div>
+	<div class="socbtn">
+		<a href="#"> <i class="fa fa-pinterest" aria-hidden="true"></i>Pin</a>
+	</div>
+</div>

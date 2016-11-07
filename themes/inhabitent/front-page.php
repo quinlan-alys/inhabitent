@@ -14,7 +14,7 @@ get_header(); ?>
 
  <div id="primary" class="front-page">
 <main id="front" class="site-front" role="front-page">
-<h1> Shop Stuff </h1>
+<h1 class="transform"> Shop Stuff </h1>
     <section class="shop-stuff">
         
         <div class="shopc">
@@ -46,28 +46,44 @@ get_header(); ?>
          </p> 
         </div>
     </section>
+     <h1 class="transform"> Inhabitent Journal</h1>
     <section class="inh-journal">
-        <h1> Inhabitent Journal</h1>
-   <?php      	
+       
+  <?php          
 //Query 5 recent published post in descending order
- $args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
+$args = array( 'numberposts' => '3', 'order' => 'DESC','post_status' => 'publish' );
 $recent_posts = wp_get_recent_posts( $args );
 //Now lets do something with these posts
 foreach( $recent_posts as $recent )
 {
-    echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
-    echo get_the_post_thumbnail($recent["ID"]);
-    echo $recent["post_title"]. '</a>';
-    echo '<p class="homedate">'. $recent["post_date"]. '</p>';
-    echo '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>';
-    //Do whatever else you please with this WordPress post
+   echo '<div class="frontposts">';
+   echo '<img src="'.$recent["post_thumbnail_id"] .'"/>';
+   echo get_the_post_thumbnail($recent["ID"]);
+   echo '<p class="homedate">'. $recent["post_date"]. '</p>' . '<p class="homecomments">'. $recent["comment_count"]. " comments". '</p>' ;
+   echo '<a href="#" class="fronttitle">'.$recent["post_title"]. '</a>';
+   echo '</div>';
+   //Do whatever else you please with this WordPress post
 }
 ?>
-
-
     </section>
+
     <section class="latest">
-        <h1> Latest Adventures</h1>
+        <h1 class="transform"> Latest Adventures</h1>
+            <div class="leftad">
+                <p> Getting back to nature in a canoe </p>
+            </div>
+            <div class="rightad">
+            <div class="beach">
+                <p> A night with friends at the beach </p>
+            </div>
+            <div class="mountain">
+                <p> Taking in the view at Big Mountain </p>
+            </div>
+            <div class="sky">
+                <p> Star gazing at the night sky </p>
+            </div>
+            </div>
+            
     </section>
 
 
