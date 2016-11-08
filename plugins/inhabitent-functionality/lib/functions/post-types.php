@@ -43,8 +43,7 @@ function register_product_post() {
 		'label'                 => 'Product',
 		'description'           => 'Products that Inhabitent sells',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
-		'taxonomies'            => array( 'category' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail',  ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -59,7 +58,7 @@ function register_product_post() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'product_type', $args );
+	register_post_type( 'product', $args );
 
 }
 add_action( 'init', 'register_product_post', 0 );

@@ -24,15 +24,17 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 //changing the logo to the inhabitent logo
 
 function my_login_logo() { ?>
-    <style type="text/css">
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-            padding-bottom: 30px;
-			
-        }
-    </style>
+   <style type="text/css">
+       #login h1 a, .login h1 a {
+           background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+           padding-bottom: 30px;
+            background-size: 220px !important; width: 230px !important;background-position: bottom !important;
+       }
+   </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
 
 function my_login_logo_url() {
     return home_url();

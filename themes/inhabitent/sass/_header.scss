@@ -17,10 +17,13 @@
 }
 
 .header-flex{
+    width: 100%;
     display:flex;
     justify-content:space-between;
     border-bottom: 1px solid lightgrey;
     position:fixed;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
 }
 
 // .site-header {

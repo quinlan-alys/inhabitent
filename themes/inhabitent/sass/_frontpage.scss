@@ -88,25 +88,65 @@
 
 
 
-// .frontposts {
-//     img {
-//         height: 300px;
-//         width: 300px;
-//     }
-// }
-
-
-
 // adventures sections========================================
 
 
 
 .latest {
     display:flex;
+   
+   width: 100%;
+   height: 500px;
 
 h1 {
     text-transform: uppercase;
     text-align: center;
 
+}
+
+h3 {
+    text-align:center;
+}
+
+}
+
+.leftAdThing {
+    background-image: url(../../images/adventures/canoe-girl.jpg);
+    background-size: cover;
+    flex: 50% 0 0 ;
+    margin: 1%;
+}
+
+.rightAdThing {
+    display: flex;
+    flex-wrap: wrap;
+    display: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 2% 1% 1% 0%;
+    flex: 94% 0 0;
+
+.beach{
+   background-image: url(../../images/adventures/beach-bonfire.jpg);
+    width: 100%;
+   
+    background-size: cover;
+    flex: 94% 0 0;
+    position: 50%;
+    margin: 0.6% 1% 1% 0;
+}
+
+.mountain {
+   background-image: url(../../images/adventures/mountain-hikers.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex: 45% 0 0; 
+}
+
+.sky {
+    background-image: url(../../images/adventures/night-sky.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex: 45% 0 0; 
 }
 }
