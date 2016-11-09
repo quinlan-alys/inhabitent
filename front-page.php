@@ -25,8 +25,9 @@ get_header(); ?>
 foreach ($terms as $term) {
 
      $url = get_term_link ($term->slug , 'product_type');
-     echo "<div class='shopc'><a href= '$url'> $term->name </a>";
-     echo $term->description . "</div>";
+    
+     echo "<div class='shopc'>" . $term->description ;
+      echo "<div class='catabtn'><a href= '$url'> $term->name stuff  </a></div></div>" ;
 }
      ?>
 
@@ -48,11 +49,14 @@ $recent_posts = get_posts( $args ); ?>
 
 <?php foreach( $recent_posts as $post ) : setup_postdata($post); ?>
 <div class="frontposts">
-<?php the_post_thumbnail();?>
-  <p class="homedate"><?php the_date(); ?> </p>
-  <p class="homecomments"> <?php comments_number(); ?> </p>
-  <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-  </div>
+    <?php the_post_thumbnail();?>
+    <p class="homedate"><?php the_date(); ?> /
+    <?php comments_number(); ?> </p>
+    <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
+    <div class="rdmore">
+        <a href="<?php the_permalink(); ?>"> Read Entry </a>
+    </div>
+</div>
 
 <?php endforeach; wp_reset_postdata(); ?>
 

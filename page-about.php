@@ -12,19 +12,19 @@ get_header(); ?>
 
 </section>
 
+<div class="aboutctx">
+    <?php
+    $props = CFS()->get_field_info( 'our_story' );
+    echo '<h2 class="h2">' . $props['label'] . '</h2>';
+    ?>
 
-<?php
-$props = CFS()->get_field_info( 'our_story' );
-echo '<h2 class="h2">' . $props['label'] . '</h2>';
-?>
+    <?php echo CFS()->get( 'our_story' ); ?>
 
-<?php echo CFS()->get( 'our_story' ); ?>
+    <?php
+    $props = CFS()->get_field_info( 'our_team' );
+    echo '<h2 class="h2">' . $props['label'] . '</h2>';
+    ?>
 
-<?php
-$props = CFS()->get_field_info( 'our_team' );
-echo '<h2 class="h2">' . $props['label'] . '</h2>';
-?>
-
-<?php echo CFS()->get( 'our_story' ); ?>
-
+    <?php echo CFS()->get( 'our_story' ); ?>
+</div>
 <?php get_footer(); ?>
