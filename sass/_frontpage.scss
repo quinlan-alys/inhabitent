@@ -1,0 +1,152 @@
+.herobanner {
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
+    url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover, cover;
+    display:flex;
+    justify-content:center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+//==================shop stuff
+
+
+.shop-stuff  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align:center;
+
+}
+
+.shopc {
+    border: 1px solid lightgrey;
+    border-top: 3px solid lightgrey;
+    height: 250px;
+    width: 260px;
+&:hover {
+    border-color: #d99054;
+}
+
+    p {
+        text-align: center;
+        font-size: 14px;
+        font-family: Merriweather Web,serif;
+    }
+}
+
+.btn {
+    background: #248a83;
+    color: #fff;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: black;
+    }
+}
+
+
+
+.catagorylogo {
+    max-width: 75px;
+}
+
+//==========================journal section
+
+.inh-journal {
+    display:flex;
+    justify-content:space-around;
+
+
+}
+
+    .transform {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.frontposts {
+    border: 1px solid lightgrey;
+   
+    justify-content:space-around;
+    img {
+        border-bottom: 4px solid lightgrey;
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration:none;
+    }
+}
+
+
+
+// adventures sections========================================
+
+
+
+.latest {
+    display:flex;
+   
+   width: 100%;
+   height: 500px;
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+h3 {
+    text-align:center;
+}
+
+}
+
+.leftAdThing {
+    background-image: url(../../images/adventures/canoe-girl.jpg);
+    background-size: cover;
+    flex: 50% 0 0 ;
+    margin: 1%;
+}
+
+.rightAdThing {
+    display: flex;
+    flex-wrap: wrap;
+    display: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 2% 1% 1% 0%;
+    flex: 94% 0 0;
+
+.beach{
+   background-image: url(../../images/adventures/beach-bonfire.jpg);
+    width: 100%;
+   
+    background-size: cover;
+    flex: 94% 0 0;
+    position: 50%;
+    margin: 0.6% 1% 1% 0;
+}
+
+.mountain {
+   background-image: url(../../images/adventures/mountain-hikers.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex: 45% 0 0; 
+}
+
+.sky {
+    background-image: url(../../images/adventures/night-sky.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex: 45% 0 0; 
+}
+}

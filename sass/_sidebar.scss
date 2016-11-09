@@ -1,0 +1,78 @@
+
+
+.sidebarinfo {
+    border-left: 1px solid grey;
+      
+}
+
+.sidecontact {
+    width: 256px;
+
+    li {
+        list-style-type: none;
+        
+    }
+
+    ul {
+        margin:0;
+    }
+
+    h1 {
+    margin-left: 16%;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "novocento-bold";
+    }
+
+    a {
+        text-decoration: none;
+        color:#248A83;
+        font-family: "Merriweather-Light";
+    }
+    a:hover {
+        color:black;
+    }
+}
+
+#search-2 {
+    display:none;
+}
+
+#recent-posts-2 {
+    display:none;
+}
+
+#meta-2 {
+    display:none;
+}
+
+#categories-2  {
+    display:none;
+}
+
+#recent-comments-2 {
+    display:none;
+}
+
+#archives-2 {
+
+    h2 {
+        text-transform:uppercase;
+        margin-left:16%;
+    }
+    li {
+          list-style-type: none;
+
+    }
+     ul {
+        margin:0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #248A83;
+    }
+    a:hover{
+        color:black;
+    }
+}
