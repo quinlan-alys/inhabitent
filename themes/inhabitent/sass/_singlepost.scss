@@ -1,0 +1,47 @@
+
+
+.socbtns {
+    display:flex;
+    justify-content:space-around;
+
+    div {
+        height:30px;
+        width:75px;
+        border: 1px solid black;
+        display:flex;
+        justify-content:center;
+
+        &:hover {
+        background-color: #248A83;
+        border: none;
+        
+
+    }
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color:black;
+        text-transform: uppercase;
+        font-size:12px;
+        text-align:center;
+        margin-top: 5px;
+&:hover {
+    color:white;
+}
+
+    }
+
+    
+}
+
+.submit {
+    border: 1px solid;
+    color: white;
+    font-size: 12px;
+    line-height: 1;
+    background: #248a83;
+}
+    
