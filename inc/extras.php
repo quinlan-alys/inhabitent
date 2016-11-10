@@ -63,3 +63,26 @@ function my_styles_method() {
         wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+
+//sort to show 16 posts per page on shop page-----------
+
+function get_all_product_posts($query ) {
+    if (is_post_type_archive( 'product') && !is_admin() && $query->is_main_query()) {
+        $query->set('posts_per_page' , '16');
+        $query->set('orderby', 'title');
+        $query->set('order' , 'ASC');
+    } //elseif for categories
+}
+add_action('pre_get_posts', 'get_all_product_posts');
+
+//display custom archive titles
+
+function display_custom_archive_title( $title ) {
+    if( is_post_type_archive( 'product' ) ) {
+        $title = "Shop Stuff";
+    }
+    return $title;
+
+}
+ add_filter( 'get_the_archive_title', 'display_custom_archive_title');

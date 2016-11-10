@@ -852,7 +852,7 @@ footer {
   display: none; }
 
 .logofoot {
-  margin-left: 13%; }
+  margin: 2% 0 0 30%; }
   .logofoot img {
     height: 50px; }
 
@@ -1112,6 +1112,8 @@ ul {
     .socbtns div:hover {
       background-color: #248A83;
       border: none; }
+      .socbtns div:hover a {
+        color: white; }
   .socbtns a {
     text-decoration: none;
     color: black;
@@ -1119,8 +1121,6 @@ ul {
     font-size: 12px;
     text-align: center;
     margin-top: 5px; }
-    .socbtns a:hover {
-      color: white; }
 
 .submit {
   border: 1px solid;
@@ -1149,6 +1149,23 @@ ul {
 
 .single-post .entry-header {
   margin-top: 50px; }
+
+.cat-links {
+  text-transform: uppercase; }
+  .cat-links a {
+    color: #248a83;
+    text-decoration: none; }
+    .cat-links a:hover {
+      color: black; }
+
+.tags-links {
+  text-transform: uppercase;
+  margin-left: 56px; }
+  .tags-links a {
+    color: #248a83;
+    text-decoration: none; }
+    .tags-links a:hover {
+      color: black; }
 
 .post-type-archive-product {
   border: 1px solid lightgrey; }
@@ -1181,6 +1198,13 @@ ul {
   .archive-title a {
     text-decoration: none;
     color: black; }
+
+.page-title {
+  position: relative;
+  text-align: center;
+  padding-top: 10%;
+  text-transform: uppercase;
+  font-size: 36px; }
 
 .productcatas {
   text-align: center;

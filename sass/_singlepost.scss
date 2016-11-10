@@ -14,6 +14,9 @@
         &:hover {
         background-color: #248A83;
         border: none;
+        a {
+            color:white;
+        }
         
 
     }
@@ -28,9 +31,6 @@
         font-size:12px;
         text-align:center;
         margin-top: 5px;
-&:hover {
-    color:white;
-}
 
     }
 
@@ -71,5 +71,30 @@
     margin-top:50px;
 
 }
+        }
+
+        .cat-links {
+            text-transform:uppercase;
+
+            a {
+                color: #248a83;
+                text-decoration: none;
+                &:hover{ 
+                color: black;
+            }
+        }
+        }
+    
+    .tags-links {
+            text-transform:uppercase;
+            margin-left:56px;
+
+            a {
+                color: #248a83;
+                text-decoration: none;
+                &:hover{
+                color: black;
+            }
+        }
         }
     
