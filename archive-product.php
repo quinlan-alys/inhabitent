@@ -13,12 +13,25 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<?php
-					the_archive_title( '<h1 class="archive-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+			
+         <?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 			</header><!-- .page-header -->
 
+	<div class='productcatas'>
+ <?php
+
+  $terms = get_terms('product_type');
+foreach ($terms as $term) {
+
+     $url = get_term_link ($term->slug , 'product_type');
+
+     echo "<a href= '$url'> $term->name </a>" ;
+}
+     ?>
+	 </div>
+
+
+<div class="flex-wrapper">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,7 +47,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/archive', 'none' ); ?>
 			 
 		<?php endif; ?>
-
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

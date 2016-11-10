@@ -1,8 +1,8 @@
 .post-type-archive-product {
-       display: flex;
+     
     border: 1px solid lightgrey;
-    flex-wrap: row wrap;
-    width: 300px;
+    
+    
 .product-flex {  
  
 
@@ -16,8 +16,44 @@ img {
 
 .archive-content {
     border: 1px solid lightgrey;
+
+    img {
+        width: 250px;
+        max-height: 150px;
+    }
 }
 .shop-area{
     border: 1px solid black;
 }
+}
+
+.flex-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+
+}
+
+.type-product {
+    flex: 25% 0 0;
+}
+
+.productcatas {
+    text-align: center;
+    border-bottom: dashed 1px lightgrey;
+    line-height: 90px;
+    margin: 40px;
+
+    a {
+        text-decoration: none;
+        color: #248a83; 
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding: 20px;
+
+        &:hover{
+        color:black;
+        }
+    }
 }

@@ -45,3 +45,31 @@
     background: #248a83;
 }
     
+
+    .single-post {
+        .entry-title {
+            color:white;
+        }
+        .entry-meta {
+    background-color: #248a83;
+    bottom: 7px;
+    right: 102px;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 479.4px;
+    max-width: 75%;
+    top: 0;
+    display: block;
+
+    a{
+        text-decoration:none;
+        color:white;
+    }
+}
+.entry-header {
+    margin-top:50px;
+
+}
+        }
+    

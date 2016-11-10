@@ -1,5 +1,9 @@
-.site-main {
-    max-width: 80%;
+.content-area {
+    width:70%;
+}
+
+.site-mainhome {
+    // max-width: 70%;
     padding: 4%;
     padding-top: 2rem;
 }
@@ -34,14 +38,18 @@ a {
     position: relative;
 }
 
+ .wp-post-image {
+        width: 780px;
+    }
+
 .entry-meta {
-    background-color: #248a83;
+   background-color: #248a83;
     bottom: 7px;
-    right: 96px;
+    right: 32px;
     color: #fff;
     padding: .75rem 1.5rem;
     position: absolute;
-    margin-top: 385.4px;
+    margin-top: 479.4px;
     max-width: 75%;
     top: 0;
     display: block;
@@ -75,6 +83,6 @@ a:hover {
 
 }
 
-.flex-wrapper {
+.flex-wrapperhome {
     display:flex;
 }

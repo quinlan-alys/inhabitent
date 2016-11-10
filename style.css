@@ -745,10 +745,19 @@ object {
   text-align: center; }
 
 .aboutctx {
-  max-width: 800px; }
+  max-width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0 auto; }
 
-.site-main {
-  max-width: 80%;
+.content-area {
+  width: 70%; }
+
+.site-mainhome {
   padding: 4%;
   padding-top: 2rem; }
 
@@ -770,14 +779,17 @@ object {
 .entry-header {
   position: relative; }
 
+.wp-post-image {
+  width: 780px; }
+
 .entry-meta {
   background-color: #248a83;
   bottom: 7px;
-  right: 96px;
+  right: 32px;
   color: #fff;
   padding: .75rem 1.5rem;
   position: absolute;
-  margin-top: 385.4px;
+  margin-top: 479.4px;
   max-width: 75%;
   top: 0;
   display: block; }
@@ -804,7 +816,7 @@ object {
   .readmore:hover a:hover {
     color: white; }
 
-.flex-wrapper {
+.flex-wrapperhome {
   display: -ms-flexbox;
   display: flex; }
 
@@ -849,18 +861,21 @@ footer {
   color: white;
   text-transform: uppercase; }
 
+ul {
+  padding: 0; }
+
 .sidebarinfo {
   border-left: 1px solid grey; }
 
 .sidecontact {
   width: 256px;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  margin-left: 40px; }
   .sidecontact li {
     list-style-type: none; }
   .sidecontact ul {
     margin: 0; }
   .sidecontact h1 {
-    margin-left: 16%;
     font-size: 24px;
     text-transform: uppercase;
     font-family: "novocento-bold"; }
@@ -887,8 +902,7 @@ footer {
   display: none; }
 
 #archives-2 h2 {
-  text-transform: uppercase;
-  margin-left: 16%; }
+  text-transform: uppercase; }
 
 #archives-2 li {
   list-style-type: none; }
@@ -902,6 +916,9 @@ footer {
 
 #archives-2 a:hover {
   color: black; }
+
+.widget {
+  margin: 1px 40px 0.5em; }
 
 .herobanner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -918,21 +935,29 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center; }
 
 .shopc {
   border: 1px solid lightgrey;
   border-top: 3px solid lightgrey;
   height: 250px;
-  width: 260px; }
+  width: 260px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .shopc:hover {
     border-color: #d99054; }
   .shopc p {
     text-align: center;
     font-size: 14px;
     font-family: Merriweather Web,serif; }
+
+.logotype {
+  height: 75px;
+  margin: 12px; }
 
 .catabtn {
   background-color: #248A83;
@@ -944,7 +969,8 @@ footer {
       justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 10px; }
   .catabtn a {
     color: white;
     text-transform: uppercase;
@@ -1103,17 +1129,62 @@ footer {
   line-height: 1;
   background: #248a83; }
 
+.single-post .entry-title {
+  color: white; }
+
+.single-post .entry-meta {
+  background-color: #248a83;
+  bottom: 7px;
+  right: 102px;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 479.4px;
+  max-width: 75%;
+  top: 0;
+  display: block; }
+  .single-post .entry-meta a {
+    text-decoration: none;
+    color: white; }
+
+.single-post .entry-header {
+  margin-top: 50px; }
+
 .post-type-archive-product {
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid lightgrey;
-  -ms-flex-wrap: row wrap;
-      flex-wrap: row wrap;
-  width: 300px; }
+  border: 1px solid lightgrey; }
   .post-type-archive-product .product-flex img {
     height: 200px;
     width: 320px; }
   .post-type-archive-product .archive-content {
     border: 1px solid lightgrey; }
+    .post-type-archive-product .archive-content img {
+      width: 250px;
+      max-height: 150px; }
   .post-type-archive-product .shop-area {
     border: 1px solid black; }
+
+.flex-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.type-product {
+  -ms-flex: 25% 0 0;
+      flex: 25% 0 0; }
+
+.productcatas {
+  text-align: center;
+  border-bottom: dashed 1px lightgrey;
+  line-height: 90px;
+  margin: 40px; }
+  .productcatas a {
+    text-decoration: none;
+    color: #248a83;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 20px; }
+    .productcatas a:hover {
+      color: black; }

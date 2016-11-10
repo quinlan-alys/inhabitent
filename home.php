@@ -6,9 +6,9 @@
  */
 
 get_header(); ?>
-<div class="flex-wrapper">
+<div class="flex-wrapperhome">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-mainhome" role="main">
 
 		<?php if ( have_posts() ) : ?>
 

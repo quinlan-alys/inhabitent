@@ -15,7 +15,7 @@
 .shop-stuff  {
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     text-align:center;
 
 }
@@ -25,6 +25,8 @@
     border-top: 3px solid lightgrey;
     height: 250px;
     width: 260px;
+    display: flex;
+    flex-direction: column;
 &:hover {
     border-color: #d99054;
 }
@@ -34,6 +36,13 @@
         font-size: 14px;
         font-family: Merriweather Web,serif;
     }
+
+    
+}
+
+.logotype{
+    height: 75px;
+    margin: 12px;
 }
 
 .catabtn {
@@ -44,6 +53,7 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 10px;
 
     a {
         color: white;

@@ -31,6 +31,8 @@ function my_login_logo() { ?>
             background-size: 220px !important; width: 230px !important;background-position: bottom !important;
        }
    </style>
+
+
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
@@ -45,3 +47,26 @@ function my_login_logo_url_title() {
     return 'Your Site Name and Info';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+//sort to show 16 posts per page on shop page-----------
+
+function get_all_product_posts($query ) {
+    if (is_post_type_archive( 'product') && !is_admin() && $query->is_main_query()) {
+        $query->set('posts_per_page' , '16');
+        $query->set('orderby', 'title');
+        $query->set('order' , 'ASC');
+    } //elseif for categories
+}
+add_action('pre_get_posts', 'get_all_product_posts');
+
+//display custom archive titles
+
+function display_custom_archive_title( $title ) {
+    if( is_post_type_archive( 'product' ) ) {
+        $title = "Shop Stuff";
+    }
+    return $title;
+
+}
+ add_filter( 'get_the_archive_title', 'display_custom_archive_title');
+

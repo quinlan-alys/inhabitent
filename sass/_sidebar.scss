@@ -1,4 +1,6 @@
-
+ul {
+    padding:0;
+}
 
 .sidebarinfo {
     border-left: 1px solid grey;
@@ -8,6 +10,7 @@
 .sidecontact {
     width: 256px;
     padding-top: 3rem;
+    margin-left: 40px;
 
     li {
         list-style-type: none;
@@ -19,7 +22,7 @@
     }
 
     h1 {
-    margin-left: 16%;
+    
     font-size: 24px;
     text-transform: uppercase;
     font-family: "novocento-bold";
@@ -59,7 +62,7 @@
 
     h2 {
         text-transform:uppercase;
-        margin-left:16%;
+     
     }
     li {
           list-style-type: none;
@@ -76,4 +79,7 @@
     a:hover{
         color:black;
     }
+}
+.widget {
+    margin: 1px 40px 0.5em;
 }

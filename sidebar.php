@@ -26,17 +26,6 @@ Vancouver, BC V6H 1H5
 						<i class="fa fa-twitter-square" aria-hidden="true"></i></li>
 						</ul>
 					</div>
-
-					<div class="sidecontact">
-						<h1> Business Hours	</h1>
-						<ul>
-						<li><b>Monday-Friday:</b> 9am to 5pm</li>
-						<li><b>Saturday:</b> 10am to 2pm</li>
-						<li><b>Sunday:</b> Closed </li>
-
-						</ul>
-					</div>
-				
 				
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->

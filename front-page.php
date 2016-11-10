@@ -8,7 +8,7 @@
 get_header(); ?>
 <body class="frontpage">
 <section class="herobanner">
-    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class="heroimg" alt="Hero Banner" />
+    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" />
 </section>
 
 
@@ -25,10 +25,12 @@ get_header(); ?>
 foreach ($terms as $term) {
 
      $url = get_term_link ($term->slug , 'product_type');
+     echo "<div class='shopc'><img class='logotype' src=" . get_template_directory_uri() . "/images/product-type-icons/" . $term->slug . ".svg>";
+     echo  $term->description ;
+     echo "<div class='catabtn'><a href= '$url'> $term->name stuff  </a></div></div>" ;
     
-     echo "<div class='shopc'>" . $term->description ;
-      echo "<div class='catabtn'><a href= '$url'> $term->name stuff  </a></div></div>" ;
 }
+
      ?>
 
 

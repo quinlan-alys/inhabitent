@@ -121,5 +121,3 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 //=======thumbnail images for homepage
 
-add_theme_support( 'post-thumbnails' );
-
