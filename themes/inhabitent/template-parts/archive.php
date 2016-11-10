@@ -23,10 +23,11 @@
 	<div class="archive-content">
     <?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
-            	<?php the_title( sprintf( '<h2 class="archive-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+            <p class="archive-title">	
+			<?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
 				
 				<?php echo CFS()->get( 'product_price' ); ?>
-		
+		</p>
 		<?php endif; ?>
 	</div><!-- .entry-content -->
 	</div>
