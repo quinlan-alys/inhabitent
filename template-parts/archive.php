@@ -11,6 +11,7 @@
 	<header class="archive-header">
 		<div class= "flex-wrapper">
 	    <?php if ( has_post_thumbnail() ) : ?>
+		 
 	
 		<a href="<?php the_permalink() ?> "><div class="archive-content"><?php the_post_thumbnail( 'large' ); ?></a>
             	<div class="product-info"><p class="archive-title"><?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>

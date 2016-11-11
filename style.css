@@ -685,14 +685,16 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .logo {
-  height: 25px; }
+  height: 25px;
+  margin-top: 30px; }
 
 .menu li {
   text-transform: uppercase;
   margin-right: 20px; }
 
 .menu li a {
-  color: #248A83; }
+  color: #248A83;
+  margin-top: 30px; }
 
 .menu li a:hover {
   color: black; }
@@ -706,7 +708,9 @@ object {
   border-bottom: 1px solid lightgrey;
   position: fixed;
   background: rgba(255, 255, 255, 0.8);
-  z-index: 1; }
+  z-index: 1;
+  height: 80px;
+  margin-top: -25px; }
 
 .logo {
   height: 25px; }
@@ -823,7 +827,7 @@ object {
 footer {
   background: url(../../images/dark-wood.png);
   height: 350px;
-  width: 100%; }
+  width: 100vw; }
 
 .email span:before {
   font-family: 'FontAwesome';
@@ -1225,3 +1229,28 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.single-product .wp-post-image {
+  width: 600px;
+  margin: 7% 2% 7% 2%; }
+
+.single-product article {
+  display: none; }
+
+.flex-prod {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-prod-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-top: 5%;
+  width: 20%; }
+  .flex-prod-right h2 {
+    font-size: 32px; }
+    .flex-prod-right h2 a {
+      text-transform: uppercase;
+      color: #d99054;
+      text-decoration: none; }

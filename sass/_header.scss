@@ -1,5 +1,7 @@
 .logo {
     height: 25px;
+    margin-top: 30px;
+    
 }
 
 .menu li {
@@ -10,10 +12,12 @@
 
 .menu li a {
     color: #248A83;
+      margin-top:30px;
 }
 
 .menu li a:hover {
     color:black;
+  
 }
 
 .header-flex{
@@ -24,6 +28,8 @@
     position:fixed;
     background: rgba(255, 255, 255, 0.8);
     z-index: 1;
+    height: 80px;
+    margin-top: -25px;
 }
 
 // .site-header {

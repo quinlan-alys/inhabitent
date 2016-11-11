@@ -81,6 +81,8 @@ add_action('pre_get_posts', 'get_all_product_posts');
 function display_custom_archive_title( $title ) {
     if( is_post_type_archive( 'product' ) ) {
         $title = "Shop Stuff";
+    } elseif(is_tax()) {
+        $title = single_term_title('', false);
     }
     return $title;
 
