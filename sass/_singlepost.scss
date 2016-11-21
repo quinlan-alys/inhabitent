@@ -1,8 +1,109 @@
 
+.single {
+
+.content-area {
+    width:60%;
+}
+
+.site-mainhome {
+    // max-width: 70%;
+    padding: 4%;
+    padding-top: 2rem;
+}
+
+.entry-title {
+    background-color: #248a83;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0; 
+    display:block;
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+
+}
+}
+
+.entry-header {
+    position: relative;
+    margin-top: 15%;
+}
+
+ .wp-post-image {
+        width: 780px;
+    }
+
+.entry-meta {
+     background-color: #248a83;
+    right: 0;
+    color: white;
+    left: 22rem;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 29.25rem;
+    max-width: 75%;
+    top: 0;
+    display: block;
+    text-transform: uppercase;
+    font-family: "novecento";
+
+}
+}
+
+.readmore  {
+    width: 130px;
+    height: 40px;
+    border: 1px solid black;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+.moretag {
+    font-size: .8rem;
+    color: black;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+
+   
+}
+
+
+}
+
+
+
+.readmore:hover  {
+    border: 1px solid #248a83;   
+    background-color: #248a83;
+    a {
+    color: white;
+    }
+/*a:hover {
+    color: white;
+}*/
+
+
+}
+
+.flex-wrapperhome {
+    display:flex;
+}
 
 .socbtns {
     display:flex;
     justify-content:space-around;
+    width: 33%;
 
     div {
         height:30px;
@@ -49,36 +150,38 @@
     .single-post {
         .entry-title {
             color:white;
+            text-transform: uppercase;
         }
         .entry-meta {
-    background-color: #248a83;
+    /*background-color: #248a83;
     bottom: 7px;
     right: 102px;
     color: #fff;
     padding: .75rem 1.5rem;
     position: absolute;
+    text-transform: uppercase;
+    font-family: "novecento";
     margin-top: 479.4px;
     max-width: 75%;
     top: 0;
-    display: block;
+    display: block;*/
 
     a{
         text-decoration:none;
         color:white;
+        
     }
 }
-.entry-header {
-    margin-top:50px;
-
-}
-        }
+   }
 
         .cat-links {
             text-transform:uppercase;
+            font-family: "novecento";
 
             a {
                 color: #248a83;
                 text-decoration: none;
+                text-transform: uppercase;
                 &:hover{ 
                 color: black;
             }
@@ -87,14 +190,15 @@
     
     .tags-links {
             text-transform:uppercase;
+            font-family: "novecento";
             margin-left:56px;
 
             a {
                 color: #248a83;
                 text-decoration: none;
+                text-transform: uppercase;
                 &:hover{
                 color: black;
             }
         }
         }
-    

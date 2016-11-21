@@ -754,14 +754,14 @@ object {
       flex-direction: column;
   margin: 0 auto; }
 
-.content-area {
+.blog .content-area {
   width: 70%; }
 
-.site-mainhome {
+.blog .site-mainhome {
   padding: 4%;
   padding-top: 2rem; }
 
-.entry-title {
+.blog .entry-title {
   background-color: #248a83;
   left: 0;
   padding: .75rem 1.5rem;
@@ -770,25 +770,29 @@ object {
   max-width: 75%;
   top: 0;
   display: block; }
-  .entry-title a {
+  .blog .entry-title a {
     color: white;
     text-decoration: none;
     font-size: 33.6px;
-    font-size: 2.1rem; }
+    font-size: 2.1rem;
+    text-transform: uppercase; }
 
-.entry-header {
-  position: relative; }
+.blog .entry-header {
+  position: relative;
+  margin-top: 10%; }
 
-.wp-post-image {
+.blog .wp-post-image {
   width: 780px; }
 
-.entry-meta {
+.blog .entry-meta {
   background-color: #248a83;
   bottom: 7px;
   right: 32px;
   color: #fff;
   padding: .75rem 1.5rem;
   position: absolute;
+  text-transform: uppercase;
+  font-family: "novecento";
   margin-top: 479.4px;
   max-width: 75%;
   top: 0;
@@ -804,6 +808,9 @@ object {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  .readmore .moretag {
+    font-size: .8rem;
+    color: black; }
   .readmore a {
     text-decoration: none;
     color: black;
@@ -812,8 +819,10 @@ object {
 .readmore:hover {
   border: 1px solid #248a83;
   background-color: #248a83;
-  color: white; }
-  .readmore:hover a:hover {
+  /*a:hover {
+    color: white;
+}*/ }
+  .readmore:hover a {
     color: white; }
 
 .flex-wrapperhome {
@@ -865,7 +874,8 @@ ul {
   padding: 0; }
 
 .sidebarinfo {
-  border-left: 1px solid grey; }
+  border-left: 1px solid grey;
+  margin-top: 18%; }
 
 .sidecontact {
   width: 256px;
@@ -1096,11 +1106,87 @@ ul {
     -ms-flex: 45% 0 0;
         flex: 45% 0 0; }
 
+.single .content-area {
+  width: 60%; }
+
+.single .site-mainhome {
+  padding: 4%;
+  padding-top: 2rem; }
+
+.single .entry-title {
+  background-color: #248a83;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  display: block; }
+  .single .entry-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    text-transform: uppercase; }
+
+.single .entry-header {
+  position: relative;
+  margin-top: 15%; }
+
+.single .wp-post-image {
+  width: 780px; }
+
+.single .entry-meta {
+  background-color: #248a83;
+  right: 0;
+  color: white;
+  left: 22rem;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 29.25rem;
+  max-width: 75%;
+  top: 0;
+  display: block;
+  text-transform: uppercase;
+  font-family: "novecento"; }
+
+.readmore {
+  width: 130px;
+  height: 40px;
+  border: 1px solid black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .readmore .moretag {
+    font-size: .8rem;
+    color: black; }
+  .readmore a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; }
+
+.readmore:hover {
+  border: 1px solid #248a83;
+  background-color: #248a83;
+  /*a:hover {
+    color: white;
+}*/ }
+  .readmore:hover a {
+    color: white; }
+
+.flex-wrapperhome {
+  display: -ms-flexbox;
+  display: flex; }
+
 .socbtns {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  width: 33%; }
   .socbtns div {
     height: 30px;
     width: 75px;
@@ -1130,40 +1216,44 @@ ul {
   background: #248a83; }
 
 .single-post .entry-title {
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
 
 .single-post .entry-meta {
-  background-color: #248a83;
-  bottom: 7px;
-  right: 102px;
-  color: #fff;
-  padding: .75rem 1.5rem;
-  position: absolute;
-  margin-top: 479.4px;
-  max-width: 75%;
-  top: 0;
-  display: block; }
+  /*background-color: #248a83;
+    bottom: 7px;
+    right: 102px;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "novecento";
+    margin-top: 479.4px;
+    max-width: 75%;
+    top: 0;
+    display: block;*/ }
   .single-post .entry-meta a {
     text-decoration: none;
     color: white; }
 
-.single-post .entry-header {
-  margin-top: 50px; }
-
 .cat-links {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "novecento"; }
   .cat-links a {
     color: #248a83;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
     .cat-links a:hover {
       color: black; }
 
 .tags-links {
   text-transform: uppercase;
+  font-family: "novecento";
   margin-left: 56px; }
   .tags-links a {
     color: #248a83;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
     .tags-links a:hover {
       color: black; }
 
@@ -1256,7 +1346,64 @@ ul {
 --------------------------------------------------------------*/
 /* Front page */
 body {
-  font-family: 'merriweather', 'sans'; }
+  font-family: 'merriweather', 'script'; }
 
 h1, h2, h3, h4, h5, h6, a {
   font-family: 'novecento', 'sans'; }
+
+.page-content-error {
+  margin: 2.5em 8em 0; }
+  .page-content-error .widget {
+    margin-left: -.5%; }
+  .page-content-error .widgettitle, .page-content-error .widget-title {
+    text-transform: uppercase; }
+  .page-content-error fieldset {
+    border: none;
+    margin-left: -2%; }
+    .page-content-error fieldset input {
+      width: 200px;
+      background-color: lightgrey;
+      font-family: "merriweather"; }
+  .page-content-error button {
+    display: none; }
+  .page-content-error li {
+    list-style-type: none;
+    margin-left: -9%; }
+    .page-content-error li a {
+      text-decoration: none;
+      color: #248A83;
+      font-family: "merriweather"; }
+    .page-content-error li a:hover {
+      color: black; }
+
+.search-results .page-title-search {
+  margin: 10% 10% 0 10%;
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: 1px solid lightgrey; }
+
+.search-prod {
+  margin-left: 10%;
+  position: none;
+  background-color: none; }
+  .search-prod a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #248a83;
+    font-size: 2rem; }
+  .search-prod a:hover {
+    color: black; }
+  .search-prod p {
+    width: 90%; }
+
+#comments label {
+  font-family: "novecento";
+  text-transform: uppercase;
+  font-size: 1.3rem; }
+
+#comments textarea, #comments input {
+  background-color: #f4f4f4; }
+
+#comments h3 {
+  text-transform: uppercase;
+  font-size: 2rem; }

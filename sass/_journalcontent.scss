@@ -1,3 +1,5 @@
+.blog {
+
 .content-area {
     width:70%;
 }
@@ -23,12 +25,14 @@ a {
     text-decoration: none;
     font-size: 33.6px;
     font-size: 2.1rem;
+    text-transform: uppercase;
 
 }
 }
 
 .entry-header {
     position: relative;
+    margin-top: 10%;
 }
 
  .wp-post-image {
@@ -42,11 +46,14 @@ a {
     color: #fff;
     padding: .75rem 1.5rem;
     position: absolute;
+    text-transform: uppercase;
+    font-family: "novecento";
     margin-top: 479.4px;
     max-width: 75%;
     top: 0;
     display: block;
 
+}
 }
 
 .readmore  {
@@ -57,22 +64,34 @@ a {
     align-items: center;
     justify-content: center;
 
+.moretag {
+    font-size: .8rem;
+    color: black;
+    }
+
 a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+
+   
 }
 
+
 }
+
+
 
 .readmore:hover  {
     border: 1px solid #248a83;   
     background-color: #248a83;
+    a {
     color: white;
+    }
+/*a:hover {
+    color: white;
+}*/
 
-a:hover {
-    color: white;
-}
 
 }
 
