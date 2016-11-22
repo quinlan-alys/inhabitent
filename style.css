@@ -1106,14 +1106,14 @@ ul {
     -ms-flex: 45% 0 0;
         flex: 45% 0 0; }
 
-.single .content-area {
+.single .page-template-default .content-area {
   width: 60%; }
 
-.single .site-mainhome {
+.single .page-template-default .site-mainhome {
   padding: 4%;
   padding-top: 2rem; }
 
-.single .entry-title {
+.single .page-template-default .entry-title {
   background-color: #248a83;
   left: 0;
   padding: .75rem 1.5rem;
@@ -1122,21 +1122,21 @@ ul {
   max-width: 75%;
   top: 0;
   display: block; }
-  .single .entry-title a {
+  .single .page-template-default .entry-title a {
     color: white;
     text-decoration: none;
     font-size: 33.6px;
     font-size: 2.1rem;
     text-transform: uppercase; }
 
-.single .entry-header {
+.single .page-template-default .entry-header {
   position: relative;
   margin-top: 15%; }
 
-.single .wp-post-image {
+.single .page-template-default .wp-post-image {
   width: 780px; }
 
-.single .entry-meta {
+.single .page-template-default .entry-meta {
   background-color: #248a83;
   right: 0;
   color: white;
@@ -1376,7 +1376,10 @@ h1, h2, h3, h4, h5, h6, a {
     .page-content-error li a:hover {
       color: black; }
 
-.search-results .page-title-search {
+.search-results fieldset, .search-no-results fieldset {
+  border: none; }
+
+.search-results .page-title-search, .search-no-results .page-title-search {
   margin: 10% 10% 0 10%;
   text-transform: uppercase;
   font-size: 3rem;
@@ -1396,14 +1399,57 @@ h1, h2, h3, h4, h5, h6, a {
   .search-prod p {
     width: 90%; }
 
+#comments .required {
+  color: #d99054; }
+
 #comments label {
   font-family: "novecento";
   text-transform: uppercase;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  display: -ms-flexbox;
+  display: flex; }
 
 #comments textarea, #comments input {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  width: 98.5%;
+  border: 1px solid #e1e1e1; }
 
 #comments h3 {
   text-transform: uppercase;
   font-size: 2rem; }
+
+#commentform {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  #commentform p:first-child {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%; }
+  #commentform .comment-form-comment, #commentform .comment-form-url {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%; }
+  #commentform .comment-form-author, #commentform .comment-form-email {
+    -ms-flex: 1 0 50%;
+        flex: 1 0 50%; }
+    #commentform .comment-form-author input, #commentform .comment-form-email input {
+      width: 97%;
+      border-radius: 0;
+      height: 52px; }
+  #commentform .comment-form-url input {
+    width: 98.5%;
+    border-radius: 0;
+    height: 52px; }
+  #commentform .submit {
+    background-color: #248a83;
+    color: #fff;
+    font-family: "novecento",sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    border-radius: 0; }
