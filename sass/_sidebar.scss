@@ -26,13 +26,13 @@ ul {
     
     font-size: 24px;
     text-transform: uppercase;
-    font-family: "novocento-bold";
+    font-family: "novecento";
     }
 
     a {
         text-decoration: none;
         color:#248A83;
-        font-family: "Merriweather-Light";
+        font-family: "merriweather", sans;
     }
     a:hover {
         color:black;
@@ -83,4 +83,9 @@ ul {
 }
 .widget {
     margin: 1px 40px 0.5em;
+}
+.widget-title {
+    
+        text-transform: uppercase;
+    
 }

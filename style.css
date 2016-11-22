@@ -736,23 +736,19 @@ object {
     .page-template-page-about .hero h1 {
       text-transform: uppercase;
       color: white;
-      text-align: center; }
+      text-align: center;
+      font-size: 3.2rem; }
   .page-template-page-about .p1 {
-    text-align: center; }
+    text-align: left; }
 
 .h2 {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-size: 2.2rem; }
 
 .aboutctx {
-  max-width: 800px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin: 0 auto; }
+  margin: 4% 0 0 22%;
+  max-width: 800px; }
 
 .blog .content-area {
   width: 70%; }
@@ -888,11 +884,11 @@ ul {
   .sidecontact h1 {
     font-size: 24px;
     text-transform: uppercase;
-    font-family: "novocento-bold"; }
+    font-family: "novecento"; }
   .sidecontact a {
     text-decoration: none;
     color: #248A83;
-    font-family: "Merriweather-Light"; }
+    font-family: "merriweather", sans; }
   .sidecontact a:hover {
     color: black; }
 
@@ -929,6 +925,9 @@ ul {
 
 .widget {
   margin: 1px 40px 0.5em; }
+
+.widget-title {
+  text-transform: uppercase; }
 
 .herobanner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1106,37 +1105,31 @@ ul {
     -ms-flex: 45% 0 0;
         flex: 45% 0 0; }
 
-.single .page-template-default .content-area {
-  width: 60%; }
+.single-post .flex-wrapper, .page-template-default .flex-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
-.single .page-template-default .site-mainhome {
+.single-post .widget-area, .page-template-default .widget-area {
+  margin-left: 10%; }
+
+.single-post .content-area, .page-template-default .content-area {
+  width: 60%;
+  margin-left: 4%; }
+
+.single-post .site-mainhome, .page-template-default .site-mainhome {
   padding: 4%;
   padding-top: 2rem; }
 
-.single .page-template-default .entry-title {
-  background-color: #248a83;
-  left: 0;
-  padding: .75rem 1.5rem;
-  position: absolute;
-  margin-top: 2.25rem;
-  max-width: 75%;
-  top: 0;
-  display: block; }
-  .single .page-template-default .entry-title a {
-    color: white;
-    text-decoration: none;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    text-transform: uppercase; }
-
-.single .page-template-default .entry-header {
+.single-post .entry-header, .page-template-default .entry-header {
   position: relative;
   margin-top: 15%; }
 
-.single .page-template-default .wp-post-image {
+.single-post .wp-post-image, .page-template-default .wp-post-image {
   width: 780px; }
 
-.single .page-template-default .entry-meta {
+.single-post .entry-meta, .page-template-default .entry-meta {
   background-color: #248a83;
   right: 0;
   color: white;
@@ -1177,16 +1170,12 @@ ul {
   .readmore:hover a {
     color: white; }
 
-.flex-wrapperhome {
-  display: -ms-flexbox;
-  display: flex; }
-
 .socbtns {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 33%; }
+  width: 40%; }
   .socbtns div {
     height: 30px;
     width: 75px;
@@ -1256,6 +1245,28 @@ ul {
     text-transform: uppercase; }
     .tags-links a:hover {
       color: black; }
+
+.entry-title {
+  background-color: #248a83;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  display: block; }
+  .entry-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    text-transform: uppercase; }
+
+.page-template-default .entry-title {
+  background-color: white;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.2rem; }
 
 .post-type-archive-product {
   border: 1px solid lightgrey; }
@@ -1333,7 +1344,7 @@ ul {
   -ms-flex-direction: column;
       flex-direction: column;
   margin-top: 5%;
-  width: 20%; }
+  width: 50%; }
   .flex-prod-right h2 {
     font-size: 32px; }
     .flex-prod-right h2 a {
@@ -1453,3 +1464,47 @@ h1, h2, h3, h4, h5, h6, a {
     text-shadow: none;
     border: none;
     border-radius: 0; }
+
+#post-11 {
+  margin-top: 10%;
+  margin-left: 6%; }
+
+.wpcf7 {
+  color: black; }
+  .wpcf7 .required {
+    color: #d99054; }
+  .wpcf7 label {
+    font-family: "novecento";
+    text-transform: uppercase;
+    font-size: 1.3rem; }
+  .wpcf7 textarea, .wpcf7 input {
+    background-color: #f4f4f4;
+    width: 98.5%;
+    border-radius: 0;
+    border: 1px solid #e1e1e1; }
+  .wpcf7 h3 {
+    text-transform: uppercase;
+    font-size: 2rem; }
+
+.wpcf7 .your-name input, .wpcf7 .your-email input {
+  width: 50%;
+  border-radius: 0; }
+
+.wpcf7 .your-subject, .wpcf7 .your-message input {
+  width: 98.5%;
+  border-radius: 0; }
+
+.wpcf7 .wpcf7-submit {
+  background-color: #248a83;
+  color: #fff;
+  font-family: "novecento",sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-radius: 0;
+  width: 100px; }

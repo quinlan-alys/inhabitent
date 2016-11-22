@@ -1,8 +1,17 @@
 
-.single .page-template-default{
+.single-post, .page-template-default{
 
+    .flex-wrapper {
+    display:flex;
+    flex-wrap: nowrap;
+
+}
+.widget-area {
+    margin-left: 10%;
+}
 .content-area {
     width:60%;
+    margin-left:4%;
 }
 
 .site-mainhome {
@@ -11,25 +20,6 @@
     padding-top: 2rem;
 }
 
-.entry-title {
-    background-color: #248a83;
-    left: 0;
-    padding: .75rem 1.5rem;
-    position: absolute;
-    margin-top: 2.25rem;
-    max-width: 75%;
-    top: 0; 
-    display:block;
-
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 33.6px;
-    font-size: 2.1rem;
-    text-transform: uppercase;
-
-}
-}
 
 .entry-header {
     position: relative;
@@ -96,14 +86,12 @@ a {
 
 }
 
-.flex-wrapperhome {
-    display:flex;
-}
+
 
 .socbtns {
     display:flex;
     justify-content:space-around;
-    width: 33%;
+    width: 40%;
 
     div {
         height:30px;
@@ -202,3 +190,35 @@ a {
             }
         }
         }
+
+        .entry-title {
+    background-color: #248a83;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0; 
+    display:block;
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+
+}
+}
+.page-template-default {
+.entry-title {
+    background-color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+
+}
+}
+
+
+
