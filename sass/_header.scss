@@ -32,17 +32,31 @@
     margin-top: -25px;
 }
 
-// .site-header {
-//         border-bottom: 1px solid lightgrey;
+.search-form {
 
+    .search-field {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-family: "novecento", sans;
+    display: none;
+    }
+    fieldset {
+        margin-top: 19px;
+        border:none;
+    }
+    button {
+        display:none;
 
-// }
+    }
+}
 
 //home page header------------------------------
 
 
 .logo {
     height: 25px;
+    margin: 36px 0 0 16px;
 }
 
 .menu li {
@@ -57,4 +71,25 @@
 
 .menu li a:hover {
     color:black;
+}
+
+.main-navigation {
+    display:flex;
+}
+
+.fa-search {
+    margin-top: 30px;
+
+
+    &:before {
+    color: #248A83;
+    
+    &:hover {
+    color: black;
+    }
+    }
+}
+
+.head1 {
+    margin-top: 10px;
 }

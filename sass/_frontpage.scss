@@ -34,7 +34,7 @@
     p {
         text-align: center;
         font-size: 14px;
-        font-family: Merriweather Web,serif;
+        font-family: "merriweather",sans;
     }
 
     
@@ -47,36 +47,27 @@
 
 .catabtn {
     background-color: #248A83;
-    width: 100px;
+    width: 120px;
     height: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
     margin-top: 10px;
+    &:hover {
+      background-color: darken(#248A83, 10%);
+   }
 
     a {
+
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 1rem;
+               
     }
 }
 
-.btn {
-    background: #248a83;
-    color: #fff;
-    font-family: Novecento Sans Web,sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-        background: black;
-    }
-}
 
 
 
@@ -89,7 +80,7 @@
 .inh-journal {
     display:flex;
     justify-content:space-around;
-
+    margin: 0 3% 0 3%;
 
 }
 
@@ -101,7 +92,8 @@
 
 .frontposts {
     border: 1px solid lightgrey;
-   width: 320px;
+   width: 385px;
+   height: 475px;
     justify-content:space-around;
     img {
         border-bottom: 4px solid lightgrey;
@@ -111,22 +103,28 @@
     a {
         text-transform: uppercase;
         text-decoration:none;
+       
         color:  #248a83;
         &:hover {
             color: black;
+        }
+        h3 {
+             font-size: 1.3rem;
+             padding: 2%;
         }
     }
 }
 
 .rdmore {
     border: 1px solid black;
-    width: 112px;
+    width: 130px;
     font-size: 14px;
-    height: 32px;
+    height: 40px;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 15px;
     &:hover {
         background-color: black;
         a {
@@ -136,14 +134,16 @@
     a {
         text-transform: uppercase;
         color: black;
-        text-align: center;
+        align-self: center;
         position:absolute;
     }
 }
 
 
 .homedate {
-    font-size: 12px;
+    font-size: 15px;
+    padding: 1%;
+    font-family: "merriweather", sans;
 }
 
 
@@ -167,6 +167,7 @@ h3 {
    font-size: 34px;
    color: white;
    padding: 4%;
+   font-family: "merriweather", sans;
    &:hover {
        color:#f0e4d1;
    }
@@ -175,8 +176,9 @@ h3 {
 }
 
 .leftAdThing {
-    background-image: url(../../images/adventures/canoe-girl.jpg);
-    background-size: cover;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
+    url(../../images/adventures/canoe-girl.jpg);
+    background-size: cover, cover;
     flex: 50% 0 0 ;
     margin: 1%;
 }
@@ -184,33 +186,35 @@ h3 {
 .rightAdThing {
     display: flex;
     flex-wrap: wrap;
-    display: wrap;
-    width: 100%;
+    
+    max-width: 595px;
     height: 100%;
-    margin: 2% 1% 1% 0%;
-    flex: 94% 0 0;
+    margin: -1.7% 1% 1% 0%;
+    flex: 78% 0 0;
 
 .beach{
-   background-image: url(../../images/adventures/beach-bonfire.jpg);
-    width: 100%;
-   
-    background-size: cover;
-    flex: 94% 0 0;
-    position: 50%;
-    margin: 0.6% 1% 1% 0;
+   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
+   url(../../images/adventures/beach-bonfire.jpg);
+    background-size: cover, cover;
+    /*flex: 94% 0 0;*/
+    margin: 5.8% 2.1% 1% 0;
 }
 
 .mountain {
-   background-image: url(../../images/adventures/mountain-hikers.jpg);
+   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
+   url(../../images/adventures/mountain-hikers.jpg);
    background-repeat: no-repeat;
-   background-size: cover;
-   flex: 45% 0 0; 
+   background-size: cover, cover;
+   flex: 48% 0 0; 
+   margin: 1% 2% 0 0%;
+}
 }
 
 .sky {
-    background-image: url(../../images/adventures/night-sky.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
+    url(../../images/adventures/night-sky.jpg);
    background-repeat: no-repeat;
-   background-size: cover;
-   flex: 45% 0 0; 
-}
+   background-size: cover, cover;
+   flex: 48% 0 0; 
+    margin: 1% 2% 0 0%;
 }

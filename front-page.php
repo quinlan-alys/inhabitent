@@ -40,7 +40,7 @@ foreach ($terms as $term) {
     <section class="inh-journal">
        
   <?php          
-//Query 5 recent published post in descending order
+
 $args = array( 
 'post_type' => 'post',
 'numberposts' => '3',
@@ -54,7 +54,7 @@ $recent_posts = get_posts( $args ); ?>
     <?php the_post_thumbnail();?>
     <p class="homedate"><?php the_date(); ?> /
     <?php comments_number(); ?> </p>
-    <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
+    <a href="<?php the_permalink(); ?>"><h3> <?php the_title(); ?> </h3></a>
     <div class="rdmore">
         <a href="<?php the_permalink(); ?>"> Read Entry </a>
     </div>

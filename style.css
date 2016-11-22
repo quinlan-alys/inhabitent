@@ -708,8 +708,23 @@ object {
   height: 80px;
   margin-top: -25px; }
 
+.search-form .search-field {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-family: "novecento", sans;
+  display: none; }
+
+.search-form fieldset {
+  margin-top: 19px;
+  border: none; }
+
+.search-form button {
+  display: none; }
+
 .logo {
-  height: 25px; }
+  height: 25px;
+  margin: 36px 0 0 16px; }
 
 .menu li {
   text-transform: uppercase;
@@ -720,6 +735,20 @@ object {
 
 .menu li a:hover {
   color: black; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex; }
+
+.fa-search {
+  margin-top: 30px; }
+  .fa-search:before {
+    color: #248A83; }
+    .fa-search:before:hover {
+      color: black; }
+
+.head1 {
+  margin-top: 10px; }
 
 .page-template-page-about {
   max-width: 1120px; }
@@ -846,7 +875,8 @@ footer {
     color: white; }
   .footerinfo a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-family: "merriweather", sans; }
   .footerinfo h1 {
     color: #d99054;
     text-transform: uppercase;
@@ -864,6 +894,7 @@ footer {
 .copyright {
   text-align: center;
   color: white;
+  font-family: "novecento", sans;
   text-transform: uppercase; }
 
 ul {
@@ -962,7 +993,7 @@ ul {
   .shopc p {
     text-align: center;
     font-size: 14px;
-    font-family: Merriweather Web,serif; }
+    font-family: "merriweather",sans; }
 
 .logotype {
   height: 75px;
@@ -970,7 +1001,7 @@ ul {
 
 .catabtn {
   background-color: #248A83;
-  width: 100px;
+  width: 120px;
   height: 50px;
   display: -ms-flexbox;
   display: flex;
@@ -980,23 +1011,13 @@ ul {
       flex-direction: column;
   margin: 0 auto;
   margin-top: 10px; }
+  .catabtn:hover {
+    background-color: #19625d; }
   .catabtn a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 12px; }
-
-.btn {
-  background: #248a83;
-  color: #fff;
-  font-family: Novecento Sans Web,sans-serif;
-  font-size: 14px;
-  line-height: 1;
-  padding: .75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .btn:hover {
-    background: black; }
+    font-size: 1rem; }
 
 .catagorylogo {
   max-width: 75px; }
@@ -1005,7 +1026,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: 0 3% 0 3%; }
 
 .transform {
   text-transform: uppercase;
@@ -1013,7 +1035,8 @@ ul {
 
 .frontposts {
   border: 1px solid lightgrey;
-  width: 320px;
+  width: 385px;
+  height: 475px;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .frontposts img {
@@ -1025,19 +1048,23 @@ ul {
     color: #248a83; }
     .frontposts a:hover {
       color: black; }
+    .frontposts a h3 {
+      font-size: 1.3rem;
+      padding: 2%; }
 
 .rdmore {
   border: 1px solid black;
-  width: 112px;
+  width: 130px;
   font-size: 14px;
-  height: 32px;
+  height: 40px;
   color: black;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  margin: 15px; }
   .rdmore:hover {
     background-color: black; }
     .rdmore:hover a {
@@ -1045,11 +1072,15 @@ ul {
   .rdmore a {
     text-transform: uppercase;
     color: black;
-    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     position: absolute; }
 
 .homedate {
-  font-size: 12px; }
+  font-size: 15px;
+  padding: 1%;
+  font-family: "merriweather", sans; }
 
 .latest {
   display: -ms-flexbox;
@@ -1062,13 +1093,14 @@ ul {
   .latest h3 {
     font-size: 34px;
     color: white;
-    padding: 4%; }
+    padding: 4%;
+    font-family: "merriweather", sans; }
     .latest h3:hover {
       color: #f0e4d1; }
 
 .leftAdThing {
-  background-image: url(../../images/adventures/canoe-girl.jpg);
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/canoe-girl.jpg);
+  background-size: cover, cover;
   -ms-flex: 50% 0 0;
       flex: 50% 0 0;
   margin: 1%; }
@@ -1078,32 +1110,31 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  display: wrap;
-  width: 100%;
+  max-width: 595px;
   height: 100%;
-  margin: 2% 1% 1% 0%;
-  -ms-flex: 94% 0 0;
-      flex: 94% 0 0; }
+  margin: -1.7% 1% 1% 0%;
+  -ms-flex: 78% 0 0;
+      flex: 78% 0 0; }
   .rightAdThing .beach {
-    background-image: url(../../images/adventures/beach-bonfire.jpg);
-    width: 100%;
-    background-size: cover;
-    -ms-flex: 94% 0 0;
-        flex: 94% 0 0;
-    position: 50%;
-    margin: 0.6% 1% 1% 0; }
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/beach-bonfire.jpg);
+    background-size: cover, cover;
+    /*flex: 94% 0 0;*/
+    margin: 5.8% 2.1% 1% 0; }
   .rightAdThing .mountain {
-    background-image: url(../../images/adventures/mountain-hikers.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/mountain-hikers.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    -ms-flex: 45% 0 0;
-        flex: 45% 0 0; }
-  .rightAdThing .sky {
-    background-image: url(../../images/adventures/night-sky.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -ms-flex: 45% 0 0;
-        flex: 45% 0 0; }
+    background-size: cover, cover;
+    -ms-flex: 48% 0 0;
+        flex: 48% 0 0;
+    margin: 1% 2% 0 0%; }
+
+.sky {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/night-sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  -ms-flex: 48% 0 0;
+      flex: 48% 0 0;
+  margin: 1% 2% 0 0%; }
 
 .single-post .flex-wrapper, .page-template-default .flex-wrapper {
   display: -ms-flexbox;

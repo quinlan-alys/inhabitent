@@ -88,3 +88,6 @@ function display_custom_archive_title( $title ) {
 
 }
  add_filter( 'get_the_archive_title', 'display_custom_archive_title');
+
+//  toggle visibility of search bar 
+
