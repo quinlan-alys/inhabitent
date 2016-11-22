@@ -34,7 +34,7 @@
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						<a href="#" class="searchicon"> <i class="fa fa-search"  aria-hidden="true"></i></a><?php get_search_form(); ?>
+						<span class="searchicon"> <i class="fa fa-search"  aria-hidden="true"></i></span><?php get_search_form(); ?>
 					</nav>
 					</div>
 				</div>	

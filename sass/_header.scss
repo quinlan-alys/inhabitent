@@ -39,7 +39,10 @@
     border: none;
     text-transform: uppercase;
     font-family: "novecento", sans;
-    display: none;
+    width: 0;
+    &:focus {
+        outline: none;
+    }
     }
     fieldset {
         margin-top: 19px;

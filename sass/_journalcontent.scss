@@ -40,15 +40,16 @@ a {
     }
 
 .entry-meta {
-   background-color: #248a83;
-    bottom: 7px;
-    right: 32px;
+    background-color: #248a83;
+    bottom: 6px;
+    /* height: 2px; */
+    right: 0px;
     color: #fff;
     padding: .75rem 1.5rem;
     position: absolute;
     text-transform: uppercase;
-    font-family: "novecento";
-    margin-top: 479.4px;
+    font-family: novecento;
+    margin-top: 439.4px;
     max-width: 75%;
     top: 0;
     display: block;
