@@ -3,7 +3,7 @@ ul {
 }
 
 .sidebarinfo {
-    border-left: 1px solid #a1a1a1;
+    border-left: 1px solid $brand-lightgrey;
     margin-top:18%;
     height: 96%;
       
@@ -28,14 +28,14 @@ ul {
     
     font-size: 24px;
     text-transform: uppercase;
-    font-family: "novecento";
+    font-family: $accent-font-family;
     }
 
     a {
         text-decoration: none;
-        color:#248A83;
+        color:$brand-green;
         line-height: 35px;
-        font-family: "merriweather", sans;
+        font-family: $main-font-family;
     }
     a:hover {
         color:black;
@@ -77,9 +77,9 @@ ul {
     }
 
     a {
-        font-family: "merriweather", sans;
+        font-family: $main-font-family;
         text-decoration: none;
-        color: #248A83;
+        color: $brand-green;
     }
     a:hover{
         color:black;

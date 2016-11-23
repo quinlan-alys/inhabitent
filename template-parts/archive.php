@@ -14,9 +14,9 @@
 		 
 	
 		<a href="<?php the_permalink() ?> "><div class="archive-content"><?php the_post_thumbnail( 'large' ); ?></a>
-            	<div class="product-info"><p class="archive-title"><?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
+            	<div class="product-info"><dl><dt class="archive-title"><?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></dt>' ); ?>
 				
-				<p class="price"><?php echo CFS()->get( 'product_price' ); ?></p></div></div>
+				<dd class="price"><?php echo CFS()->get( 'product_price' ); ?></dd></dl></div></div>
 	
 		<?php endif; ?>
 

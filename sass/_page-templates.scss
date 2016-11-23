@@ -5,10 +5,10 @@
 /* Front page */
 
 body {
-    font-family: 'merriweather', 'script';
+    font-family: $main-font-family;
 }
 
 h1, h2, h3, h4, h5,h6, a {
-    font-family:'novecento', 'sans';
+    font-family:$accent-font-family;
 
 }

@@ -31,7 +31,7 @@
     }
 
 .entry-meta {
-    background-color: #248a83;
+    background-color: $brand-green;
     right: 0px;
     color: #fff;
     bottom: 6px;
@@ -41,7 +41,7 @@
    
     max-width: 40;
     top: 362px;
-    font-family: "merriweather", sans;
+    font-family: $main-font-family;
 
 }
 }
@@ -73,15 +73,11 @@ a {
 
 
 .readmore:hover  {
-    border: 1px solid #248a83;   
-    background-color: #248a83;
+    border: 1px solid $brand-green;   
+    background-color: $brand-green;
     a {
-    color: white;
+    color: $background-color;
     }
-/*a:hover {
-    color: white;
-}*/
-
 
 }
 
@@ -100,10 +96,10 @@ a {
         justify-content:center;
 
         &:hover {
-        background-color: #248A83;
+        background-color: $brand-green;
         border: none;
         a {
-            color:white;
+            color:$background-color;
         }
         
 
@@ -127,36 +123,24 @@ a {
 
 .submit {
     border: 1px solid;
-    color: white;
+    color: $background-color;
     font-size: 12px;
     line-height: 1;
-    background: #248a83;
+    background: $brand-green;
     
 }
     
 
     .single-post {
         .entry-title {
-            color:white;
+            color:$background-color;
             text-transform: uppercase;
         }
         .entry-meta {
-    /*background-color: #248a83;
-    bottom: 7px;
-    right: 102px;
-    color: #fff;
-    padding: .75rem 1.5rem;
-    position: absolute;
-    text-transform: uppercase;
-    font-family: "novecento";
-    margin-top: 479.4px;
-    max-width: 75%;
-    top: 0;
-    display: block;*/
 
     a{
         text-decoration:none;
-        color:white;
+        color:$background-color;
         
     }
 }
@@ -164,10 +148,10 @@ a {
 
         .cat-links {
             text-transform:uppercase;
-            font-family: "novecento";
+            font-family: $accent-font-family;
 
             a {
-                color: #248a83;
+                color: $brand-green;
                 text-decoration: none;
                 text-transform: uppercase;
                 &:hover{ 
@@ -178,11 +162,11 @@ a {
     
     .tags-links {
             text-transform:uppercase;
-            font-family: "novecento";
+            font-family: $accent-font-family;
             margin-left:56px;
 
             a {
-                color: #248a83;
+                color: $brand-green;
                 text-decoration: none;
                 text-transform: uppercase;
                 &:hover{
@@ -192,7 +176,7 @@ a {
         }
 
         .entry-title {
-    background-color: #248a83;
+    background-color: $brand-green;
     left: 0;
     padding: .75rem 1.5rem;
     position: absolute;
@@ -202,7 +186,7 @@ a {
     display:block;
 
 a {
-    color: white;
+    color: $background-color;
     text-decoration: none;
     font-size: 33.6px;
     font-size: 2.1rem;
@@ -212,7 +196,7 @@ a {
 }
 .page-template-default {
 .entry-title {
-    background-color: white;
+    background-color: $background-color;
     position: relative;
     text-transform: uppercase;
     font-size: 3.2rem;

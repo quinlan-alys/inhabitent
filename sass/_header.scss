@@ -11,7 +11,7 @@
 }
 
 .menu li a {
-    color: #248A83;
+    color: $brand-green;
       margin-top:30px;
 }
 
@@ -24,7 +24,7 @@
     width: 100%;
     display:flex;
     justify-content:space-between;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid $brand-lightgrey;
     position:fixed;
     background: rgba(255, 255, 255, 0.8);
     z-index: 1;
@@ -38,7 +38,7 @@
     background-color: transparent;
     border: none;
     text-transform: uppercase;
-    font-family: "novecento", sans;
+    font-family: $accent-font-family;
     width: 0;
     &:focus {
         outline: none;
@@ -69,7 +69,7 @@
 }
 
 .menu li a {
-    color: #248A83;
+    color: $brand-green;
 }
 
 .menu li a:hover {
@@ -85,7 +85,7 @@
 
 
     &:before {
-    color: #248A83;
+    color: $brand-green;
     
     &:hover {
     color: black;

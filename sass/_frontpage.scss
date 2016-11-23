@@ -1,4 +1,8 @@
-.herobanner {
+.home  {
+    .site-content {
+    margin: 0 auto;
+    }
+    .herobanner {
     background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
     url(../../images/home-hero.jpg) no-repeat top;
     background-size: cover, cover;
@@ -6,7 +10,7 @@
     justify-content:center;
     height: 100vh;
     width: 100vw;
-    margin-left: -63px;
+    margin-left: -77px;
     
 }
 
@@ -22,20 +26,20 @@
 }
 
 .shopc {
-    border: 1px solid lightgrey;
-    border-top: 3px solid lightgrey;
+    border: 1px solid $brand-lightgrey;
+    border-top: 3px solid $brand-lightgrey;
     height: 250px;
     width: 260px;
     display: flex;
     flex-direction: column;
 &:hover {
-    border-color: #d99054;
+    border-color: $brand-orange;
 }
 
     p {
         text-align: center;
         font-size: 14px;
-        font-family: "merriweather",sans;
+        font-family: $main-font-family;
     }
 
     
@@ -47,7 +51,7 @@
 }
 
 .catabtn {
-    background-color: #248A83;
+    background-color: $brand-green;
     width: 120px;
     height: 50px;
     display: flex;
@@ -56,12 +60,12 @@
     margin: 0 auto;
     margin-top: 10px;
     &:hover {
-      background-color: darken(#248A83, 10%);
+      background-color: darken($brand-green, 10%);
    }
 
     a {
 
-        color: white;
+        color: $background-color;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1rem;
@@ -88,16 +92,17 @@
     .transform {
     text-transform: uppercase;
     text-align: center;
+    font-size: 3rem;
 
 }
 
 .frontposts {
-    border: 1px solid lightgrey;
+    border: 1px solid $brand-lightgrey;
     width: 331px;
     height: 468px;
     justify-content:space-around;
     img {
-        border-bottom: 4px solid lightgrey;
+        border-bottom: 4px solid $brand-lightgrey;
         height: 250px;
     }
 
@@ -105,7 +110,7 @@
         text-transform: uppercase;
         text-decoration:none;
        
-        color:  #248a83;
+        color:  $brand-green;
         &:hover {
             color: black;
         }
@@ -129,7 +134,7 @@
     &:hover {
         background-color: black;
         a {
-            color: white;
+            color: $background-color;
         }
     }
     a {
@@ -144,7 +149,7 @@
 .homedate {
     font-size: 15px;
     padding: 1%;
-    font-family: "merriweather", sans;
+    font-family: $main-font-family;
 }
 
 
@@ -157,6 +162,7 @@
    display:flex;
    width: 100%;
    height: 500px;
+   margin-left:-35px;
 
 h1 {
     text-transform: uppercase;
@@ -166,11 +172,11 @@ h1 {
 
 h3 {
    font-size: 34px;
-   color: white;
+   color: $background-color;
    padding: 4%;
-   font-family: "merriweather", sans;
+   font-family: $main-font-family;
    &:hover {
-       color:#f0e4d1;
+       color:$brand-yellow;
    }
 }
 
@@ -224,17 +230,18 @@ h3 {
 
 .more-adv {
     p {
-    background-color: #248A83;
-    color: white;
+    background-color: $brand-green;
+    color: $background-color;
     margin-left: 6%;
     width: 185px;
     height: 50px;
     text-align: center;
     padding-top: 1%;
     text-transform: uppercase;
-    font-family: "novecento", sans;
+    font-family: $accent-font-family;
         &:hover {
-      background-color: darken(#248A83, 10%);
+      background-color: darken($brand-green, 10%);
    }
     }
+}
 }
