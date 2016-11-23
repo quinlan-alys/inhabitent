@@ -84,6 +84,11 @@ $recent_posts = get_posts( $args ); ?>
             </div>
         </div>
     </div>
+    <div class="more-adv">
+
+        <p> More Adventures</p>
+
+    </div>
 </section>
 
 

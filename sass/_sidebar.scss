@@ -3,15 +3,17 @@ ul {
 }
 
 .sidebarinfo {
-    border-left: 1px solid grey;
+    border-left: 1px solid #a1a1a1;
     margin-top:18%;
+    height: 96%;
       
 }
 
 .sidecontact {
     width: 256px;
-    padding-top: 3rem;
-    margin-left: 40px;
+    padding-top: 4rem;
+    margin-left: 75px;
+    line-height: 35px;
 
     li {
         list-style-type: none;
@@ -32,6 +34,7 @@ ul {
     a {
         text-decoration: none;
         color:#248A83;
+        line-height: 35px;
         font-family: "merriweather", sans;
     }
     a:hover {
@@ -74,6 +77,7 @@ ul {
     }
 
     a {
+        font-family: "merriweather", sans;
         text-decoration: none;
         color: #248A83;
     }
@@ -82,10 +86,15 @@ ul {
     }
 }
 .widget {
-    margin: 1px 40px 0.5em;
+    margin: 1px 75px 0.5em;
+    width: 206px;
 }
 .widget-title {
     
         text-transform: uppercase;
     
+}
+
+.dow {
+    font-weight: bold;
 }
