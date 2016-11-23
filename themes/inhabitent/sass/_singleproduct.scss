@@ -1,0 +1,43 @@
+.single-product {
+
+    .socbtns {
+        width: 266px;
+    }
+
+    .readmore {
+        display: none;
+    }
+
+    .wp-post-image {
+       width:600px;
+       margin: 7% 2% 7% 2%;
+    }
+
+    article{
+        display:none;
+    }
+}
+
+
+.flex-prod{
+    display:flex;
+
+  
+}
+
+.flex-prod-right {
+    display:flex;
+    flex-direction:column;
+    margin-top: 5%;
+    width:50%;
+
+    h2 {
+        font-size: 32px;
+
+        a {
+        text-transform:uppercase;
+        color:$brand-orange;
+        text-decoration:none;
+        }
+    }
+}

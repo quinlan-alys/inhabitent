@@ -1,0 +1,41 @@
+.page-content-error {
+    margin: 2.5em 8em 0;
+
+    .widget {
+        margin-left: -.5%;
+    }
+
+    .widgettitle, .widget-title {
+        text-transform: uppercase;
+    }
+
+
+
+    fieldset {
+        border:none;
+        margin-left: -2%;
+        input {
+            width: 200px;
+            background-color: $brand-lightgrey;
+            font-family: $main-font-family;
+        }
+    }
+
+    button{ 
+        display:none;
+    }
+
+    li {
+        list-style-type:none;
+        margin-left: -9%;
+
+        a {
+        text-decoration: none;
+        color:$brand-green;
+        font-family: $main-font-family;
+        }
+           a:hover {
+        color:black;
+    }
+    }
+}

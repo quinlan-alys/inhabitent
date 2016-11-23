@@ -1,0 +1,41 @@
+.search-results, .search-no-results{
+    fieldset {
+        border: none;
+    }
+
+    .entry-title {
+        position: relative;
+        background-color:$background-color;
+    }
+
+    .page-title-search {
+    margin: 10% 10% 0 10%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border-bottom: 1px solid $brand-lightgrey;
+    }
+
+
+
+}
+
+.search-prod {
+    margin-left: 10%;
+    position: none;
+    background-color: none;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $brand-green;
+        font-size: 2rem;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    p {
+        width: 90%;
+    }
+}

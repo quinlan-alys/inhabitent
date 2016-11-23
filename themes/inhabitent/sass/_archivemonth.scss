@@ -1,0 +1,55 @@
+.date {
+
+    .hentry {
+      margin: 0 0 1.5em 5.66rem;
+    }
+    .content-area {
+     margin-top: 15%;
+        
+    }
+
+    .entry-title{
+    background-color:$brand-green;
+    left: 91px;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 15.25rem;
+    width: 485px;
+    top: 0;
+    display: block;
+
+    }
+
+    .entry-meta {
+    background-color: $brand-green;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 15.25rem;
+    display: block;
+    width: 408px;
+    top: 20.95rem;
+    text-transform: uppercase;
+    color: $background-color;
+    font-family: $accent-font-family ;
+    right: 543px;
+}
+
+.sidebarinfo {
+    margin-top: 15%;
+    height: 93%;
+}
+
+
+}
+
+.post-22 {
+   .entry-meta{
+       top: 23.4rem;
+    }
+}
+
+.post-15 {
+    .entry-meta {
+        top: 21.6rem;
+    }
+}
