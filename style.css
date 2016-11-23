@@ -816,8 +816,7 @@ object {
 
 .blog .entry-meta {
   background-color: #248a83;
-  bottom: 7px;
-  /* height: 2px; */
+  bottom: 6px;
   right: 0px;
   color: #fff;
   padding: .75rem 1.5rem;
@@ -849,10 +848,7 @@ object {
 
 .readmore:hover {
   border: 1px solid #248a83;
-  background-color: #248a83;
-  /*a:hover {
-    color: white;
-}*/ }
+  background-color: #248a83; }
   .readmore:hover a {
     color: white; }
 
@@ -863,7 +859,8 @@ object {
 footer {
   background: url(../../images/dark-wood.png);
   height: 350px;
-  width: 100vw; }
+  width: 100vw;
+  margin-left: -6%; }
 
 .email span:before {
   font-family: 'FontAwesome';
@@ -1609,6 +1606,39 @@ h1, h2, h3, h4, h5, h6, a {
   border: none;
   border-radius: 0;
   width: 100px; }
+
+.date .content-area {
+  margin-top: 15%; }
+
+.date .entry-title {
+  background-color: #248a83;
+  left: 63px;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 15.25rem;
+  width: 485px;
+  top: 0;
+  display: block; }
+
+.date .entry-meta {
+  background-color: #248a83;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 15.25rem;
+  display: block;
+  width: 408px;
+  top: 20.95rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: "novecento";
+  right: 543px; }
+
+.date .sidebarinfo {
+  margin-top: 15%;
+  height: 93%; }
+
+.post-22 .entry-meta {
+  top: 23.4rem; }
 
 .site-content {
   width: 1120px;
