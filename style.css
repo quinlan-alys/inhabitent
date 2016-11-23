@@ -1047,7 +1047,8 @@ ul {
 .home .transform {
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-weight: 100; }
 
 .home .frontposts {
   border: 1px solid #a1a1a1;
@@ -1135,15 +1136,14 @@ ul {
   .home .rightAdThing .beach {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/beach-bonfire.jpg);
     background-size: cover, cover;
-    /*flex: 94% 0 0;*/
-    margin: 5.8% 2.1% 1% 0; }
+    margin: 5.1% 2.1% 1% 0; }
   .home .rightAdThing .mountain {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/mountain-hikers.jpg);
     background-repeat: no-repeat;
     background-size: cover, cover;
     -ms-flex: 48% 0 0;
         flex: 48% 0 0;
-    margin: 1% 2% 0 0%; }
+    margin: 1.9% 2% 0 0%; }
 
 .home .sky {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/night-sky.jpg);

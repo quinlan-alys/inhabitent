@@ -89,5 +89,17 @@ function display_custom_archive_title( $title ) {
 }
  add_filter( 'get_the_archive_title', 'display_custom_archive_title');
 
-//  toggle visibility of search bar 
+
+
+
+// change the read  more button on blog posts 
+
+function new_excerpt_more($more) {
+       global $post;
+	return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
+
 

@@ -117,22 +117,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-// Remove "Editor" links from sub-menus
-// function inhabitent_remove_submenus() {
-//     remove_submenu_page( 'themes.php', 'theme-editor.php' );
-//     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-// }
-// add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
-
-// change the read  more button on blog posts 
-
-function new_excerpt_more($more) {
-       global $post;
-	return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
-//=======thumbnail images for homepage
-

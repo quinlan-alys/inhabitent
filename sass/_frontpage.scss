@@ -93,6 +93,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
+      font-weight: 100;
 
 }
 
@@ -193,7 +194,6 @@ h3 {
 .rightAdThing {
     display: flex;
     flex-wrap: wrap;
-    
     max-width: 595px;
     height: 100%;
     margin: -1.7% 1% 1% 0%;
@@ -203,8 +203,7 @@ h3 {
    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
    url(../../images/adventures/beach-bonfire.jpg);
     background-size: cover, cover;
-    /*flex: 94% 0 0;*/
-    margin: 5.8% 2.1% 1% 0;
+    margin: 5.1% 2.1% 1% 0;
 }
 
 .mountain {
@@ -213,7 +212,7 @@ h3 {
    background-repeat: no-repeat;
    background-size: cover, cover;
    flex: 48% 0 0; 
-   margin: 1% 2% 0 0%;
+   margin: 1.9% 2% 0 0%;
 }
 }
 
