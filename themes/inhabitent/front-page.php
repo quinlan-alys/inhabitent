@@ -8,7 +8,7 @@
 get_header(); ?>
 <body class="frontpage">
 <section class="herobanner">
-    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" />
+    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" alt="inhabitent logo"/>
 </section>
 
 
@@ -71,16 +71,20 @@ $recent_posts = get_posts( $args ); ?>
     <section class="latest">
         <div class="leftAdThing">
             <h3> Getting back to nature in a canoe </h3>
+            <div class="rdmore">Read More</div>
         </div>
         <div class="rightAdThing">
             <div class="beach">
                 <h3> A night with friends at the beach </h3>
+                <div class="rdmore">Read More</div>
             </div>
              <div class="mountain">
             <h3> Taking in the view at Big Mountain </h3>
+            <div class="rdmore">Read More</div>
             </div>
             <div class="sky">
                 <h3> Star gazing at the night sky </h3>
+                <div class="rdmore">Read More</div>
             </div>
         </div>
     </div>

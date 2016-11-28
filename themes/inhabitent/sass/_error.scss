@@ -1,5 +1,5 @@
 .page-content-error {
-    margin: 2.5em 8em 0;
+    margin: 2.5em 4em 0;
 
     .widget {
         margin-left: -.5%;
@@ -7,6 +7,8 @@
 
     .widgettitle, .widget-title {
         text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 400px;
     }
 
 
@@ -27,7 +29,7 @@
 
     li {
         list-style-type:none;
-        margin-left: -9%;
+        margin-left: -29%;
 
         a {
         text-decoration: none;
@@ -38,4 +40,8 @@
         color:black;
     }
     }
+}
+
+.error-404 {
+    margin-bottom: 6%;
 }

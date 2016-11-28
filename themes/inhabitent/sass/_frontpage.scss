@@ -142,7 +142,6 @@
         text-transform: uppercase;
         color: black;
         align-self: center;
-        position:absolute;
     }
 }
 
@@ -165,6 +164,26 @@
    height: 500px;
    margin-left:-35px;
 
+.rdmore {
+    border: 1px solid white;
+    width: 115px;
+    font-size: 14px;
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    font-family:$accent-font-family;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $brand-green;
+        border: 1px solid $brand-green;
+    }
+
+}
+
 h1 {
     text-transform: uppercase;
     text-align: center;
@@ -172,7 +191,7 @@ h1 {
 }
 
 h3 {
-   font-size: 34px;
+   font-size: 27px;
    color: $background-color;
    padding: 4%;
    font-family: $main-font-family;
@@ -189,6 +208,7 @@ h3 {
     background-size: cover, cover;
     flex: 50% 0 0 ;
     margin: 1%;
+    height: 490px;
 }
 
 .rightAdThing {
@@ -203,7 +223,9 @@ h3 {
    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 
    url(../../images/adventures/beach-bonfire.jpg);
     background-size: cover, cover;
-    margin: 5.1% 2.1% 1% 0;
+    margin: 2.9% 2.1% 0% 1px;
+    height:227px;
+    width:585px;
 }
 
 .mountain {
@@ -211,8 +233,8 @@ h3 {
    url(../../images/adventures/mountain-hikers.jpg);
    background-repeat: no-repeat;
    background-size: cover, cover;
-   flex: 48% 0 0; 
-   margin: 1.9% 2% 0 0%;
+   flex: 46.1% 0 0; 
+   margin: 1.9% 1% 0 0%;
 }
 }
 
@@ -222,7 +244,7 @@ h3 {
    background-repeat: no-repeat;
    background-size: cover, cover;
    flex: 48% 0 0; 
-    margin: 1% 2% 0 0%;
+    margin: 2% 0 0 17px;
 }
 
 // button under flexbox sect
@@ -244,3 +266,4 @@ h3 {
     }
 }
 }
+

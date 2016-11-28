@@ -1,19 +1,19 @@
 .date {
-
     .hentry {
-      margin: 0 0 1.5em 5.66rem;
+      margin: 83px 0 1.5em 5.66rem;
     }
-    .content-area {
-     margin-top: 15%;
-        
-    }
+    
+
+   .entry-header {
+       margin-top: 11%;
+   }
 
     .entry-title{
     background-color:$brand-green;
     left: 91px;
     padding: .75rem 1.5rem;
     position: absolute;
-    margin-top: 15.25rem;
+    margin-top: 7.9rem;
     width: 485px;
     top: 0;
     display: block;
@@ -27,29 +27,24 @@
     margin-top: 15.25rem;
     display: block;
     width: 408px;
-    top: 20.95rem;
+    top: 13.6rem;
     text-transform: uppercase;
     color: $background-color;
     font-family: $accent-font-family ;
     right: 543px;
 }
 
+.entry-content{
+    width: 700px;
+    padding-right: 2%;
+}
+
 .sidebarinfo {
-    margin-top: 15%;
+    margin: 15% 0 10% 0;
     height: 93%;
+    
 }
 
 
 }
 
-.post-22 {
-   .entry-meta{
-       top: 23.4rem;
-    }
-}
-
-.post-15 {
-    .entry-meta {
-        top: 21.6rem;
-    }
-}

@@ -6,6 +6,7 @@ Author URI: http://www.redacademy.com
 Description: A custome theme for the Inhabitent Camping Supply Co.
 Version: 1.0.0
 License: GNU General Public License v2 or later
+Text Domain: inhabitent
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 
@@ -966,6 +967,7 @@ ul {
   width: 206px; }
 
 .widget-title {
+  width: 400px;
   text-transform: uppercase; }
 
 .dow {
@@ -1091,8 +1093,7 @@ ul {
     color: black;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
-        align-self: center;
-    position: absolute; }
+        align-self: center; }
 
 .home .homedate {
   font-size: 15px;
@@ -1105,11 +1106,30 @@ ul {
   width: 100%;
   height: 500px;
   margin-left: -35px; }
+  .home .latest .rdmore {
+    border: 1px solid white;
+    width: 115px;
+    font-size: 14px;
+    height: 40px;
+    color: white;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center;
+    margin: 15px;
+    font-family: "novecento", sans;
+    text-transform: uppercase; }
+    .home .latest .rdmore:hover {
+      background-color: #248A83;
+      border: 1px solid #248A83; }
   .home .latest h1 {
     text-transform: uppercase;
     text-align: center; }
   .home .latest h3 {
-    font-size: 34px;
+    font-size: 27px;
     color: #ffffff;
     padding: 4%;
     font-family: "merriweather", serif; }
@@ -1121,7 +1141,8 @@ ul {
   background-size: cover, cover;
   -ms-flex: 50% 0 0;
       flex: 50% 0 0;
-  margin: 1%; }
+  margin: 1%;
+  height: 490px; }
 
 .home .rightAdThing {
   display: -ms-flexbox;
@@ -1136,14 +1157,16 @@ ul {
   .home .rightAdThing .beach {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/beach-bonfire.jpg);
     background-size: cover, cover;
-    margin: 5.1% 2.1% 1% 0; }
+    margin: 2.9% 2.1% 0% 1px;
+    height: 227px;
+    width: 585px; }
   .home .rightAdThing .mountain {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/mountain-hikers.jpg);
     background-repeat: no-repeat;
     background-size: cover, cover;
-    -ms-flex: 48% 0 0;
-        flex: 48% 0 0;
-    margin: 1.9% 2% 0 0%; }
+    -ms-flex: 46.1% 0 0;
+        flex: 46.1% 0 0;
+    margin: 1.9% 1% 0 0%; }
 
 .home .sky {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventures/night-sky.jpg);
@@ -1151,7 +1174,7 @@ ul {
   background-size: cover, cover;
   -ms-flex: 48% 0 0;
       flex: 48% 0 0;
-  margin: 1% 2% 0 0%; }
+  margin: 2% 0 0 17px; }
 
 .home .more-adv p {
   background-color: #248A83;
@@ -1424,15 +1447,21 @@ ul {
 body {
   font-family: "merriweather", serif; }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 2px;
+  font-family: "novecento", sans; }
+
+a {
   font-family: "novecento", sans; }
 
 .page-content-error {
-  margin: 2.5em 8em 0; }
+  margin: 2.5em 4em 0; }
   .page-content-error .widget {
     margin-left: -.5%; }
   .page-content-error .widgettitle, .page-content-error .widget-title {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 400px; }
   .page-content-error fieldset {
     border: none;
     margin-left: -2%; }
@@ -1444,13 +1473,16 @@ h1, h2, h3, h4, h5, h6, a {
     display: none; }
   .page-content-error li {
     list-style-type: none;
-    margin-left: -9%; }
+    margin-left: -29%; }
     .page-content-error li a {
       text-decoration: none;
       color: #248A83;
       font-family: "merriweather", serif; }
     .page-content-error li a:hover {
       color: black; }
+
+.error-404 {
+  margin-bottom: 6%; }
 
 .search-results fieldset, .search-no-results fieldset {
   border: none; }
@@ -1634,17 +1666,17 @@ h1, h2, h3, h4, h5, h6, a {
     border-color: #19625d; }
 
 .date .hentry {
-  margin: 0 0 1.5em 5.66rem; }
+  margin: 83px 0 1.5em 5.66rem; }
 
-.date .content-area {
-  margin-top: 15%; }
+.date .entry-header {
+  margin-top: 11%; }
 
 .date .entry-title {
   background-color: #248A83;
   left: 91px;
   padding: .75rem 1.5rem;
   position: absolute;
-  margin-top: 15.25rem;
+  margin-top: 7.9rem;
   width: 485px;
   top: 0;
   display: block; }
@@ -1656,21 +1688,19 @@ h1, h2, h3, h4, h5, h6, a {
   margin-top: 15.25rem;
   display: block;
   width: 408px;
-  top: 20.95rem;
+  top: 13.6rem;
   text-transform: uppercase;
   color: #ffffff;
   font-family: "novecento", sans;
   right: 543px; }
 
+.date .entry-content {
+  width: 700px;
+  padding-right: 2%; }
+
 .date .sidebarinfo {
-  margin-top: 15%;
+  margin: 15% 0 10% 0;
   height: 93%; }
 
-.post-22 .entry-meta {
-  top: 23.4rem; }
-
-.post-15 .entry-meta {
-  top: 21.6rem; }
-
 .site-content {
-  width: 1120px; }
+  max-width: 1120px; }
