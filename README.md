@@ -1,6 +1,6 @@
 #Inhabitent Wordpress Site
 
-![alt tag](inhabitentshot.png)
+![alt tag](inhabitent_FP.png)
 
 ##About
 
